@@ -2,9 +2,9 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Andrea Gao
+tagline:             'Data Science, Duke, Bayes'
+url:                 http://gytcrt.github.io
 paginate:            1
 baseurl:             ""
 
@@ -17,14 +17,21 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Andrea Gao
+  url:
+  email:             gaoyuantcrt@gmail.com
 
 # Custom vars
-version:             2.0.0
+version:             1.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:
+
+# This is the list of pages to include in the header of the website.
+pages_list:
+  About Me: '/about/'
+  Archive: '/archive/'
+  Life: '/life/'
+
 
 # Gems
 gems:
