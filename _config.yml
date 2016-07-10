@@ -30,6 +30,7 @@ author:
   # Setting social media usernames will add icons at the bottom of the sidebar
   github:         gytcrt
   linkedin:       ayuangao
+  instagram:      gytcrt
 
   # Setting a disqus username will enable the comment section
   disqus:         yuanandreagao
@@ -38,7 +39,7 @@ author:
   photo:          /gytcrt.github.io/public/img/profile.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:          |
+  about:
 
 
 kramdown:

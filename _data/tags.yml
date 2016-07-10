@@ -16,12 +16,11 @@ Project:
   image: /gytcrt.github.io/public/img/Project.jpg
   color: '#949667'
   description: >
-    Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
-    It’s based on Poole, the Jekyll butler.
+    Things I am working on.
 
 Blog:
   name: Blog
   image: /gytcrt.github.io/public/img/Blog.jpg
   color: '#949667'
   description: >
-    Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
+    My thoughts on Statistics, Data Science, and Social Science.
