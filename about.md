@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 ---
 
 {% comment %}
@@ -19,4 +19,7 @@ title: About
 
 ***
 
-### Images
+### Images Reference
+*  Blog: Sangluan Tie(丧乱帖) by [Wang Xizhi(王羲之)](https://en.wikipedia.org/wiki/Wang_Xizhi)
+*  Project: Pipa Xing(琵琶行) by [Wen Zhengming(文徵明)](https://en.wikipedia.org/wiki/Wen_Zhengming)
+*  About me: [Dr. Pozzi Comes Home](https://hammer.ucla.edu/blog/2014/10/dr-pozzi-comes-home/) by [John Singer Sargent](https://en.wikipedia.org/wiki/John_Singer_Sargent), 1881
