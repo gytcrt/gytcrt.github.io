@@ -15,7 +15,7 @@ title: About Me
 
 {{ site.author.about }}
 
-Hi there! My name is Yuan "Andrea" Gao. I am a Dukie in [Department of Statistical Science](https://stat.duke.edu/), and an aspiring Chinese calligraphist.
+Hi there! My name is Yuan "Andrea" Gao. I am a Dukie in [Department of Statistical Science](https://stat.duke.edu/){:target="_blank"}, and an aspiring Chinese calligraphist.
 
 I am enthusiastic about application of Bayesian Statistics, Predictive Modeling, Machine Learning, and Natural Language Processing in different fields.
 
@@ -33,6 +33,6 @@ I am looking for more experiences and adventures.
 ***
 
 ### Images Reference
-*  Blog: Sangluan Tie(丧乱帖) by [Wang Xizhi(王羲之)](https://en.wikipedia.org/wiki/Wang_Xizhi)
-*  Project: Pipa Xing(琵琶行) by [Wen Zhengming(文徵明)](https://en.wikipedia.org/wiki/Wen_Zhengming)
-*  About me: [Dr. Pozzi Comes Home](https://hammer.ucla.edu/blog/2014/10/dr-pozzi-comes-home/) by [John Singer Sargent](https://en.wikipedia.org/wiki/John_Singer_Sargent), 1881
+*  Blog: Sangluan Tie(丧乱帖) by [Wang Xizhi(王羲之)](https://en.wikipedia.org/wiki/Wang_Xizhi){:target="_blank"}
+*  Project: Pipa Xing(琵琶行) by [Wen Zhengming(文徵明)](https://en.wikipedia.org/wiki/Wen_Zhengming){:target="_blank"}
+*  About me: [Dr. Pozzi Comes Home](https://hammer.ucla.edu/blog/2014/10/dr-pozzi-comes-home/){:target="_blank"} by [John Singer Sargent](https://en.wikipedia.org/wiki/John_Singer_Sargent){:target="_blank"}, 1881
