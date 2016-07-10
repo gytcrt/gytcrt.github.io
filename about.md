@@ -3,7 +3,20 @@ layout: page
 title: About
 ---
 
-![Here I am at Duke Campus](/assets/4-16.jpg)
+{% comment %}
+  This inserts the "about" photo and text from `_config.yml`.
+  You can edit it there (jekyll needs restart!) or remove it and provide your own photo/text.
+  Don't forget to add the `me` class to the photo, like this: `![alt](src){:.me}`.
+{% endcomment %}
 
-I am a first-year master student in statistics at Duke now.
-I love statistics, I love data science, I love Chinese, I love Tolstoy, I love the U.S, I love movies, I love Japanese food, I love fine art, and I love the world!
+{% if site.author.photo %}
+  ![{{ site.author.name }}]({{ site.author.photo }}){:.me}
+{% endif %}
+
+{{ site.author.about }}
+
+[write something about self]
+
+***
+
+### Images

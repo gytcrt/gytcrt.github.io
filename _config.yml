@@ -1,39 +1,45 @@
 # Permalinks
-permalink:           pretty
+permalink:        pretty
 
 # Setup
-title:               Andrea Gao
-tagline:             'Data Science, Duke, Bayes'
-url:                 http://gytcrt.github.io
-paginate:            1
-baseurl:             ""
+url:              http://gytcrt.github.io
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
+# Set to '' in case of hosting on `http://<your-github-name>.github.io`
+baseurl:          /gytcrt.github.io
 
-# About/contact
+title:            Andrea Gao
+
+# Markdown enabled, however don't use more than one paragraph (enforced by `>`)
+description:      >
+  One should either be a work of art, or wear a work of art.
+
+
+
+# The tags listed as entries in the sidebar
+sidebar_tags:     [Blog , Project]
+
+# Fallback image and color if not overwritten for tag or post
+image:            /gytcrt.github.io/public/img/Pozzi.jpg
+color:            '#A85641'
+
 author:
-  name:              Andrea Gao
-  url:
-  email:             gaoyuantcrt@gmail.com
+  name:           'Andrea Gao'
 
-# Custom vars
-version:             1.0.0
-github:
-  repo:
+  # Setting social media usernames will add icons at the bottom of the sidebar
+  github:         gytcrt
+  linkedin:       ayuangao
 
-# This is the list of pages to include in the header of the website.
-pages_list:
-  About Me: '/about/'
-  Archive: '/archive/'
-  Life: '/life/'
+  # Setting a disqus username will enable the comment section
+  disqus:         yuanandreagao
+
+  # This photo will be used in the about section
+  photo:          /gytcrt.github.io/public/img/profile.jpg
+
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:          |
 
 
-# Gems
-gems:
-  - jekyll-paginate
-  - jekyll-gist
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
