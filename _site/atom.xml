@@ -4,13 +4,39 @@
  <title>Andrea Gao</title>
  <link href="http://gytcrt.github.io/gytcrt.github.io/atom.xml" rel="self"/>
  <link href="http://gytcrt.github.io/gytcrt.github.io/"/>
- <updated>2016-07-10T15:51:46-07:00</updated>
+ <updated>2016-07-10T17:59:00-07:00</updated>
  <id>http://gytcrt.github.io</id>
  <author>
    <name>Andrea Gao</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>First Post&amp;#58 Website Active</title>
+   <link href="http://gytcrt.github.io/gytcrt.github.io/2016/07/10/first-post-website-active/"/>
+   <updated>2016-07-10T00:00:00-07:00</updated>
+   <id>http://gytcrt.github.io/2016/07/10/first-post:-website-active</id>
+   <content type="html">&lt;p&gt;Finally, I set up my first personal website. The idea occurred to me at the beginning of 2016, but it took me some time to explore and find a way to accomplish it. Actually, it was quite an adventurous and rewarding mission, because I was not an expert in stuff like HTML and CSS.&lt;/p&gt;
+
+&lt;p&gt;I visited a lot of personal websites of professors, data scientists, software engineers and designers, and researched some popular web-hosting services, before I started. And I decided to use &lt;a href=&quot;http://jekyllrb.com&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Page&lt;/a&gt; to generate and host the website.&lt;/p&gt;
+
+&lt;p&gt;The theme is stolen from &lt;a href=&quot;https://github.com/qwtel/hydejack&quot; target=&quot;_blank&quot;&gt;Hydejack&lt;/a&gt; and &lt;a href=&quot;https://github.com/poole/hyde&quot; target=&quot;_blank&quot;&gt;Hyde&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s thanks to many people’s effort that I could build this website.&lt;/p&gt;
+
+&lt;p&gt;Here are some useful resources I’ve learned from:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jmcglone.com/guides/github-pages/&quot; target=&quot;_blank&quot;&gt;Creating and Hosting a Personal Site on GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jekyll/jekyll/wiki/Sites&quot; target=&quot;_blank&quot;&gt;Jekyll Blog Gallery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/templates/&quot; target=&quot;_blank&quot;&gt;Jekyll Template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot; target=&quot;_blank&quot;&gt;Markdown Syntax Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are curious, feel free to check &lt;a href=&quot;https://github.com/gytcrt/gytcrt.github.io&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; or contact me.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Introducing Hydejack</title>
@@ -347,23 +373,6 @@ They will appear in the listed order.&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>What&#39;s Jekyll?</title>
-   <link href="http://gytcrt.github.io/gytcrt.github.io/2012/02/06/whats-jekyll/"/>
-   <updated>2012-02-06T00:00:00-08:00</updated>
-   <id>http://gytcrt.github.io/2012/02/06/whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It’s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
-
-&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Introducing Hydejack
-tags: [Blog]
 ---
 
 <style>
