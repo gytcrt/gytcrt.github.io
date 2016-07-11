@@ -4,7 +4,7 @@
  <title>Andrea Gao</title>
  <link href="http://gytcrt.github.io/gytcrt.github.io/atom.xml" rel="self"/>
  <link href="http://gytcrt.github.io/gytcrt.github.io/"/>
- <updated>2016-07-10T17:59:00-07:00</updated>
+ <updated>2016-07-10T18:35:24-07:00</updated>
  <id>http://gytcrt.github.io</id>
  <author>
    <name>Andrea Gao</name>
@@ -19,7 +19,7 @@
    <id>http://gytcrt.github.io/2016/07/10/first-post:-website-active</id>
    <content type="html">&lt;p&gt;Finally, I set up my first personal website. The idea occurred to me at the beginning of 2016, but it took me some time to explore and find a way to accomplish it. Actually, it was quite an adventurous and rewarding mission, because I was not an expert in stuff like HTML and CSS.&lt;/p&gt;
 
-&lt;p&gt;I visited a lot of personal websites of professors, data scientists, software engineers and designers, and researched some popular web-hosting services, before I started. And I decided to use &lt;a href=&quot;http://jekyllrb.com&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Page&lt;/a&gt; to generate and host the website.&lt;/p&gt;
+&lt;p&gt;I visited a lot of personal websites of professors, data scientists, software engineers and designers, and researched some popular web-hosting services, before I started. I decided to use &lt;a href=&quot;http://jekyllrb.com&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Page&lt;/a&gt; to generate and host the website, because they are free and flexible.&lt;/p&gt;
 
 &lt;p&gt;The theme is stolen from &lt;a href=&quot;https://github.com/qwtel/hydejack&quot; target=&quot;_blank&quot;&gt;Hydejack&lt;/a&gt; and &lt;a href=&quot;https://github.com/poole/hyde&quot; target=&quot;_blank&quot;&gt;Hyde&lt;/a&gt;&lt;/p&gt;
 
