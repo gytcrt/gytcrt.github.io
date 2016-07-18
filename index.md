@@ -15,8 +15,6 @@ title: About Me
 
 {{ site.author.about }}
 
-Hi there! My name is Yuan "Andrea" Gao. I am a Dukie in [Department of Statistical Science](https://stat.duke.edu/){:target="_blank"}, and an aspiring Chinese calligraphist.
-
 I am enthusiastic about application of Bayesian Statistics, Predictive Modeling, Machine Learning, and Natural Language Processing in different fields.
 
 The appreciation of art, fashion, literature, and different cultures governs my life. And I enjoy jogging, cycling and traveling a lot.
