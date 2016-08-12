@@ -5,7 +5,7 @@ tags: [Blog]
 ---
 I went to [San Francisco Museum of Modern Art (SFMOMA)](https://www.sfmoma.org/){:target="_blank"} yesterday, and it was my second time to visit there in this summer.
 
-When I was at Berkeley in 2014, SFMOMA was under construction. Unfortunately, I couldn’t get into SFMOMA, and at the beginning of 2015, I visited MOMA in the New York City. After a three-year-long expansion, SFMOMA reopened on May 14, 2016, and it happened that I am in the Bay Area now.
+When I was at Berkeley in 2014, SFMOMA was under construction. Unfortunately, I couldn’t get into SFMOMA, and at the beginning of 2015, I visited MOMA in New York City. After a three-year-long expansion, SFMOMA reopened on May 14, 2016, and it happened that I am in the Bay Area now.
 
 Among numerous impressive arts in SFMOMA, [*Spectrum Colors Arranged by Chance*](https://www.sfmoma.org/artwork/99.352){:target="_blank"} by [Ellsworth Kelly](Ellsworth Kelly){:target="_blank"} stood out as a surprise for me. Since it was painted by oil on gridded wood, and Kelly arranged color for each square by totally chance to avoid his own influence on the art.
 
