@@ -4,7 +4,7 @@
  <title>Andrea Gao</title>
  <link href="http://gytcrt.github.io/gytcrt.github.io/atom.xml" rel="self"/>
  <link href="http://gytcrt.github.io/gytcrt.github.io/"/>
- <updated>2016-07-17T23:17:22-07:00</updated>
+ <updated>2016-08-11T18:47:09-07:00</updated>
  <id>http://gytcrt.github.io</id>
  <author>
    <name>Andrea Gao</name>
@@ -13,13 +13,50 @@
 
  
  <entry>
+   <title>Shiny&amp;#58 easily passing a long list of items to selectInput choices</title>
+   <link href="http://gytcrt.github.io/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/"/>
+   <updated>2016-08-11T00:00:00-07:00</updated>
+   <id>http://gytcrt.github.io/2016/08/11/RShiny:-easily-passing-a-long-list-of-items-to-selectInput-choices</id>
+   <content type="html">&lt;p&gt;Recently, I’m working on R Shiny to design a Web App. I found the example of selectInput shown on &lt;a href=&quot;http://shiny.rstudio.com/reference/shiny/latest/selectInput.html&quot; target=&quot;_blank&quot;&gt;Shiny Reference&lt;/a&gt; is not helpful once we have a list of items like &lt;a href=&quot;/gytcrt.github.io/public/files/countries.txt&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Are we gonna list all the items one by one?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;selectInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;country&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Countries:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Afghanistan&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;AF&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;s2&quot;&gt;&quot;Albania&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;AL&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;s2&quot;&gt;&quot;Algeria&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;DZ&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;NO WAY:)&lt;/p&gt;
+
+&lt;p&gt;Here we’d better read the countries and their abbreviations as a data frame and pass them to selectInput choices as a list.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Read the countries and their abbreviation as data frame
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries.list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;read.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;countries.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;|&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                             &lt;span class=&quot;n&quot;&gt;stringsAsFactors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quote&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                             &lt;span class=&quot;n&quot;&gt;col.names&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;abbr&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;country&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Make the data frame as a list
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choice.country&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as.list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries.list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abbr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choice.country&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;countries.list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Pass the list to selectInput choices
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;selectInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;country&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Countries:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;choices&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choice.country&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It’s more decent!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Probability as Art</title>
    <link href="http://gytcrt.github.io/gytcrt.github.io/2016/07/17/probability-as-art/"/>
    <updated>2016-07-17T00:00:00-07:00</updated>
    <id>http://gytcrt.github.io/2016/07/17/probability-as-art</id>
    <content type="html">&lt;p&gt;I went to &lt;a href=&quot;https://www.sfmoma.org/&quot; target=&quot;_blank&quot;&gt;San Francisco Museum of Modern Art (SFMOMA)&lt;/a&gt; yesterday, and it was my second time to visit there in this summer.&lt;/p&gt;
 
-&lt;p&gt;When I was at Berkeley in 2014, SFMOMA was under construction. Unfortunately, I couldn’t get into SFMOMA, and at the beginning of 2015, I visited MOMA in the New York City. After a three-year-long expansion, SFMOMA reopened on May 14, 2016, and it happened that I am in the Bay Area now.&lt;/p&gt;
+&lt;p&gt;When I was at Berkeley in 2014, SFMOMA was under construction. Unfortunately, I couldn’t get into SFMOMA, and at the beginning of 2015, I visited MOMA in New York City. After a three-year-long expansion, SFMOMA reopened on May 14, 2016, and it happened that I am in the Bay Area now.&lt;/p&gt;
 
 &lt;p&gt;Among numerous impressive arts in SFMOMA, &lt;a href=&quot;https://www.sfmoma.org/artwork/99.352&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Spectrum Colors Arranged by Chance&lt;/em&gt;&lt;/a&gt; by &lt;a href=&quot;Ellsworth Kelly&quot; target=&quot;_blank&quot;&gt;Ellsworth Kelly&lt;/a&gt; stood out as a surprise for me. Since it was painted by oil on gridded wood, and Kelly arranged color for each square by totally chance to avoid his own influence on the art.&lt;/p&gt;
 

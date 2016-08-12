@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Probability as Art &middot; Andrea Gao</title>
+  <title>Shiny&#58 easily passing a long list of items to selectInput choices &middot; Andrea Gao</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|PT+Serif:400,400italic,700,700italic" type="text/css">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/gytcrt.github.io/public/css/jekyll-github.css">
   <link rel="stylesheet" href="/gytcrt.github.io/font-awesome/css/font-awesome.min.css">
 
-  <link rel="canonical" href="http://gytcrt.github.io/gytcrt.github.io/2016/07/17/probability-as-art/" />
+  <link rel="canonical" href="http://gytcrt.github.io/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/" />
 
   
 
@@ -54,30 +54,42 @@
 
 
 <article class="post">
-  <h1 class="post-title">Probability as Art</h1>
+  <h1 class="post-title">Shiny&#58 easily passing a long list of items to selectInput choices</h1>
   <div class="post-date">
-    <time datetime="2016-07-17T00:00:00-07:00">07/17/16</time>
+    <time datetime="2016-08-11T00:00:00-07:00">08/11/16</time>
     <span>on <a href="/gytcrt.github.io/tag/Blog/">Blog</a></span>
   </div>
   
   <hr/>
-  <p>I went to <a href="https://www.sfmoma.org/" target="_blank">San Francisco Museum of Modern Art (SFMOMA)</a> yesterday, and it was my second time to visit there in this summer.</p>
+  <p>Recently, I’m working on R Shiny to design a Web App. I found the example of selectInput shown on <a href="http://shiny.rstudio.com/reference/shiny/latest/selectInput.html" target="_blank">Shiny Reference</a> is not helpful once we have a list of items like <a href="/gytcrt.github.io/public/files/countries.txt" target="_blank">this</a>.</p>
 
-<p>When I was at Berkeley in 2014, SFMOMA was under construction. Unfortunately, I couldn’t get into SFMOMA, and at the beginning of 2015, I visited MOMA in New York City. After a three-year-long expansion, SFMOMA reopened on May 14, 2016, and it happened that I am in the Bay Area now.</p>
+<p>Are we gonna list all the items one by one?</p>
 
-<p>Among numerous impressive arts in SFMOMA, <a href="https://www.sfmoma.org/artwork/99.352" target="_blank"><em>Spectrum Colors Arranged by Chance</em></a> by <a href="Ellsworth Kelly" target="_blank">Ellsworth Kelly</a> stood out as a surprise for me. Since it was painted by oil on gridded wood, and Kelly arranged color for each square by totally chance to avoid his own influence on the art.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">selectInput</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span> <span class="s2">"Countries:"</span><span class="p">,</span>
+            <span class="n">c</span><span class="p">(</span><span class="s2">"Afghanistan"</span> <span class="o">=</span> <span class="s2">"AF"</span><span class="p">,</span>
+              <span class="s2">"Albania"</span> <span class="o">=</span> <span class="s2">"AL"</span><span class="p">,</span>
+              <span class="s2">"Algeria"</span> <span class="o">=</span> <span class="s2">"DZ"</span><span class="p">))</span>
+</code></pre>
+</div>
+<p>NO WAY:)</p>
 
-<p><img src="/gytcrt.github.io/public/img/SpectrumColors.png" alt="Spectrum Colors Arranged by Chance" style="width: 1000px;" /></p>
-<center>Figure 1: Spectrum Colors Arranged by Chance </center>
-<p><br /></p>
+<p>Here we’d better read the countries and their abbreviations as a data frame and pass them to selectInput choices as a list.</p>
 
-<p>Coincidently, this paint reminded me of a project I did last semester, <a href="/gytcrt.github.io/_posts/2016-05-02-topic-modeling-with-latent-dirichlet-allocation.html" target="_blank">Topic Modelling with Latent Dirichlet Allocation</a>. My teammate and I implemented Latent Dirichlet Allocation, and tried to discover latent topics among documents in a corpus. At the end of our project, we visualized the result to test our implementation, and the visualization looks very similar to Kelly’s work.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1"># Read the countries and their abbreviation as data frame
+</span><span class="n">countries.list</span> <span class="o">&lt;-</span> <span class="n">read.table</span><span class="p">(</span><span class="s2">"countries.txt"</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">"|"</span><span class="p">,</span>
+                             <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">quote</span> <span class="o">=</span> <span class="s2">""</span><span class="p">,</span>
+                             <span class="n">col.names</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"abbr"</span><span class="p">,</span> <span class="s2">"country"</span><span class="p">))</span>
+<span class="c1"># Make the data frame as a list
+</span><span class="n">choice.country</span> <span class="o">&lt;-</span> <span class="n">as.list</span><span class="p">(</span><span class="n">countries.list</span><span class="o">$</span><span class="n">abbr</span><span class="p">)</span>
+<span class="n">names</span><span class="p">(</span><span class="n">choice.country</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">countries.list</span><span class="o">$</span><span class="n">country</span>
 
-<center><img src="/gytcrt.github.io/public/img/TopicModel.png" alt="Topic Modeling with Latent Dirichlet Allocation" style="width: 500px; height: 400px" /></center>
-<center>Figure 2: Topic Modeling with Dirichlet Allocation </center>
-<p><br /></p>
+<span class="c1"># Pass the list to selectInput choices
+</span><span class="n">selectInput</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span> <span class="s2">"Countries:"</span><span class="p">,</span>
+            <span class="n">choices</span><span class="o">=</span><span class="n">choice.country</span><span class="p">)</span>
+</code></pre>
+</div>
 
-<p>Suddenly, I felt there is no boundary between art and science, maybe we can even try to discover the probability distribution of how Kelly picked the colors. Appreciation grows.</p>
+<p>It’s more decent!</p>
 
 </article>
 
@@ -103,20 +115,20 @@
     
     
       
+        
+        
+      
       
         <li>
           <h4>
-            <a href="/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/">
-              <span>Shiny&#58 easily passing a long list of items to selectInput choices</span>
-              <small>08/11/16</small>
+            <a href="/gytcrt.github.io/2016/07/17/probability-as-art/">
+              <span>Probability as Art</span>
+              <small>07/17/16</small>
             </a>
           </h4>
         </li>
       
     
-      
-        
-        
       
       
         <li>
@@ -140,8 +152,8 @@
 
   <script>
     var disqus_config = function () {
-      this.page.url = 'http://gytcrt.github.io/gytcrt.github.io/2016/07/17/probability-as-art/';
-      this.page.identifier = '/2016/07/17/probability-as-art';
+      this.page.url = 'http://gytcrt.github.io/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/';
+      this.page.identifier = '/2016/08/11/RShiny:-easily-passing-a-long-list-of-items-to-selectInput-choices';
     };
 
     var loaded = false;
