@@ -3,7 +3,7 @@ layout: post
 title: Shiny&#58 easily passing a long list of items to selectInput choices
 tags: [Blog]
 ---
-Recently, I'm working on R Shiny to design a Web App. I found the example of selectInput shown on [Shiny Reference](http://shiny.rstudio.com/reference/shiny/latest/selectInput.html){:target="_blank"} is not helpful once we have a list of items like [this](/gytcrt.github.io/public/files/countries.txt){:target="_blank"}.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recently, I'm working on R Shiny to design a Web App. I found the example of selectInput shown on [Shiny Reference](http://shiny.rstudio.com/reference/shiny/latest/selectInput.html){:target="_blank"} is not helpful once we have a list of items like [this](/gytcrt.github.io/public/files/countries.txt){:target="_blank"}.
 
 Are we gonna list all the items one by one?
 
@@ -15,7 +15,7 @@ selectInput("country", "Countries:",
 ```
 NO WAY:)
 
-Here we'd better read the countries and their abbreviations as a data frame and pass them to selectInput choices as a list.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here we'd better read the countries and their abbreviations as a data frame and pass them to selectInput choices as a list.
 
 ```r
 # Read the countries and their abbreviation as data frame
@@ -31,4 +31,4 @@ selectInput("country", "Countries:",
             choices=choice.country)
 ```
 
-It's more decent!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's more decent!
