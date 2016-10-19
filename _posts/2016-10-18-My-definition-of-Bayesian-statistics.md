@@ -6,6 +6,7 @@ tags: [Blog]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In my writing class, I tried to explain what Bayesian statistics is to my professor and mentor, but even the [Wikipedia page of Bayesian statistics](https://en.wikipedia.org/wiki/Bayesian_statistics){:target="_blank"} is full of jargons for people out of my field. It reminds me of the first time I knew about Bayesian statistics from a senior student at Duke, I barely understood nothing he talked about Bayesian during the conversation. Therefore, I attempted to define Bayesian statistics in a more plain way. I've revised the definition for several times. It's not perfect yet, but I'd like to post it here. I'm willing to hear some advice on it:)
 
+<center> <img src="/gytcrt.github.io/public/img/bayesian.jpg" style="width: 400px;"/> </center>
 
 <center> <h3>Bayesian statistics </h3> </center>
 
