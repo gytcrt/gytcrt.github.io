@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Singular Value Decomposition of The Ambassadors &middot; Andrea Gao</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|PT+Serif:400,400italic,700,700italic" type="text/css">
+  <link rel="stylesheet" href="/gytcrt.github.io/public/css/poole.css">
+  <link rel="stylesheet" href="/gytcrt.github.io/public/css/hyde.css">
+  <link rel="stylesheet" href="/gytcrt.github.io/public/css/jekyll-github.css">
+  <link rel="stylesheet" href="/gytcrt.github.io/font-awesome/css/font-awesome.min.css">
+
+  <link rel="canonical" href="http://gytcrt.github.io/gytcrt.github.io/2016/11/07/SVM-Ambassadors/" />
+
+  
+
+  
+
+  
+
+  <style>
+    .content a,
+    .related-posts li a:hover {
+      color: #949667;
+    }
+    ::selection {
+      color: #fff;
+      background: #949667;
+    }
+    ::-moz-selection {
+      color: #fff;
+      background: #949667;
+    }
+  </style>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/gytcrt.github.io/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/gytcrt.github.io/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Andrea Gao" href="http://gytcrt.github.io/gytcrt.github.io/atom.xml">
+</head>
+
+
+  <body>
+    <a id="_menu" class="menu" href="#_sidebar">☰</a>
+
+    <main class="content container">
+      
+
+
+<article class="post">
+  <h1 class="post-title">Singular Value Decomposition of The Ambassadors</h1>
+  <div class="post-date">
+    <time datetime="2016-11-07T00:00:00-05:00">11/07/16</time>
+    <span>on <a href="/gytcrt.github.io/tag/Blog/">Blog</a></span>
+  </div>
+  
+  <hr/>
+  <p>I was reading a lecture of computation of Ridge Regression, I noticed a very cute illustration of Singular Value Decomposition drawn by Prof. Cynthia Rudin.</p>
+
+<p><img src="/gytcrt.github.io/public/img/SpectrumColors.png" alt="Spectrum Colors Arranged by Chance" style="width: 1000px;" /></p>
+<center>Figure 1: Spectrum Colors Arranged by Chance </center>
+<p><br /></p>
+
+</article>
+
+
+<aside class="author">
+  <h2 class="aside-title">About</h2>
+
+  
+  <img class="me" src="/gytcrt.github.io/public/img/profile.jpg" alt="Andrea Gao"/>
+  
+
+  <p>Hello World!</p>
+
+<p>My name is Yuan “Andrea” Gao. I am a Dukie in <a href="https://stat.duke.edu/" target="_blank">Department of Statistical Science</a>, and an aspiring Chinese calligraphist.</p>
+
+</aside>
+
+
+<aside class="related">
+  <h2 class="aside-title">Related Posts</h2>
+  <ul class="related-posts">
+    
+    
+    
+      
+        
+        
+      
+      
+        <li>
+          <h4>
+            <a href="/gytcrt.github.io/2016/10/18/My-definition-of-Bayesian-statistics/">
+              <span>My definition of Bayesian statistics</span>
+              <small>10/18/16</small>
+            </a>
+          </h4>
+        </li>
+      
+    
+      
+      
+        <li>
+          <h4>
+            <a href="/gytcrt.github.io/2016/09/08/A-genetic-example-of-Latent-Dirichlet-Allocation/">
+              <span>A genetic example of Latent Dirichlet Allocation</span>
+              <small>09/08/16</small>
+            </a>
+          </h4>
+        </li>
+      
+    
+      
+      
+        <li>
+          <h4>
+            <a href="/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/">
+              <span>Shiny&#58 easily passing a long list of items to selectInput choices</span>
+              <small>08/11/16</small>
+            </a>
+          </h4>
+        </li>
+      
+    
+  </ul>
+</aside>
+
+
+<aside class="comments">
+  <h2 class="aside-title">Comments</h2>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://gytcrt.github.io/gytcrt.github.io/2016/11/07/SVM-Ambassadors/';
+      this.page.identifier = '/2016/11/07/SVM-Ambassadors';
+    };
+
+    var loaded = false;
+    var disqusThreadOffsetTop = document.getElementById('disqus_thread').offsetTop;
+
+    window.addEventListener('scroll', function (e) {
+      var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      if (!loaded && bodyScrollTop + window.innerHeight >= disqusThreadOffsetTop) {
+        loaded = true;
+        var d = document, s = d.createElement('script');
+
+        s.src = '//yuanandreagao.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+
+    </main>
+
+    
+
+
+
+
+
+<div   id="_backdrop" class="backdrop"></div>
+<aside id="_sidebar" class="sidebar" style="background-image:url('/gytcrt.github.io/public/img/Blog.jpg')">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1><a href="/gytcrt.github.io/">Andrea Gao</a></h1>
+      <p>One should either be a work of art, or wear a work of art.</p>
+
+<p>——Oscar Wilde</p>
+
+    </div>
+
+    <nav class="sidebar-nav">
+      <ul>
+        
+          
+          <li>
+            <a class="sidebar-nav-item " href="/gytcrt.github.io/tag/Blog/">Blog</a>
+          </li>
+        
+          
+          <li>
+            <a class="sidebar-nav-item " href="/gytcrt.github.io/tag/Project/">Project</a>
+          </li>
+        
+
+        
+
+        
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+            <li>
+              <a class="sidebar-nav-item " href="/gytcrt.github.io/">About Me</a>
+            </li>
+            
+          
+        
+      </ul>
+    </nav>
+
+    <div class="sidebar-social">
+      
+        <a href="https://github.com/gytcrt" target="_blank"><span class="fa fa-github" aria-hidden="true" ></span> </a>
+
+      
+
+      
+        <a href="https://linkedin.com/in/ayuangao" target="_blank"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+
+      
+
+      
+        <a href="https://instagram.com/gytcrt" target="_blank"><span class="fa fa-instagram" aria-hidden="true" target="_blank"></span></a>  
+
+      
+    </div>
+  </div>
+</aside>
+
+
+    <script src="/gytcrt.github.io/public/js/hydejack.js" async></script>
+  </body>
+</html>

@@ -4,13 +4,26 @@
  <title>Andrea Gao</title>
  <link href="http://gytcrt.github.io/gytcrt.github.io/atom.xml" rel="self"/>
  <link href="http://gytcrt.github.io/gytcrt.github.io/"/>
- <updated>2016-10-18T23:26:03-04:00</updated>
+ <updated>2016-11-07T15:17:12-05:00</updated>
  <id>http://gytcrt.github.io</id>
  <author>
    <name>Andrea Gao</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Singular Value Decomposition of The Ambassadors</title>
+   <link href="http://gytcrt.github.io/gytcrt.github.io/2016/11/07/SVM-Ambassadors/"/>
+   <updated>2016-11-07T00:00:00-05:00</updated>
+   <id>http://gytcrt.github.io/2016/11/07/SVM-Ambassadors</id>
+   <content type="html">&lt;p&gt;I was reading a lecture of computation of Ridge Regression, I noticed a very cute illustration of Singular Value Decomposition drawn by Prof. Cynthia Rudin.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gytcrt.github.io/public/img/SpectrumColors.png&quot; alt=&quot;Spectrum Colors Arranged by Chance&quot; style=&quot;width: 1000px;&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;Figure 1: Spectrum Colors Arranged by Chance &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>My definition of Bayesian statistics</title>
