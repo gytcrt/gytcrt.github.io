@@ -4,7 +4,21 @@ title: Singular Value Decomposition of The Ambassadors
 tags: [Blog]
 ---
 
-I was reading a lecture of computation of Ridge Regression, I noticed a very cute illustration of Singular Value Decomposition drawn by Prof. Cynthia Rudin.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was reading a note of computation of [Ridge Regression](https://en.wikipedia.org/wiki/Tikhonov_regularization){:target="_blank"} in the afternoon, I noticed a super cute illustration of Singular Value Decomposition(SVD) drawn by Prof. Cynthia Rudin.
 
-<img src="/gytcrt.github.io/public/img/SpectrumColors.png" alt="Spectrum Colors Arranged by Chance" style="width: 1000px;"/>
-<center>Figure 1: Spectrum Colors Arranged by Chance </center><br>
+<img src="http://gytcrt.github.io/public/img/SVD.png" alt="Singular Value Decomposition" style="width: 1000px;"/>
+<center>Figure 1: Illustration of Singular Value Decomposition in Ridge Regression </center><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maybe because I has been buried in [*The Crown*](http://www.imdb.com/title/tt4786824/){:target="_blank"} recent days, the rotation and scaling of Singular Value Decomposition suddenly remind me of [*The Ambassadors*](https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)){:target="_blank"} by Hans Holbein, which is the most well known example of anamorphosis in painting.
+
+<img src="http://gytcrt.github.io/public/img/The_Ambassadors.jpg" alt="The Ambassadors" style="width: 1000px;"/>
+<center>Figure 2: The Ambassadors </center><br>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Look at the bottom center of the painting, it's an exactly geometric transformation of a skull. And the transformation is almost the same as the smile face in Figure 1!    
+
+<center><img src="http://gytcrt.github.io/public/img/Holbein_Skull.jpg" alt="The transformed skull" style="width: 300px;"/></center>
+<center>Figure 2: The Transformed Skull </center><br>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interestingly, there may always be different ways to explain and appreciate a theorem in math or a masterpiece of fine art.
