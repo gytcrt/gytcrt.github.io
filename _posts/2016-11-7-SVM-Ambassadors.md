@@ -15,7 +15,7 @@ tags: [Blog]
 <center>Figure 2: The Ambassadors </center><br>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Look at the bottom center of the painting, it's an exactly geometric transformation of a skull. And the transformation is almost the same as the smile face in Figure 1!    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Look at the bottom center of the painting, it's an exactly geometric transformation of a skull. And the transformation is almost the same as the smiling face in Figure 1!    
 
 <center><img src="http://gytcrt.github.io/public/img/Holbein_Skull.jpg" alt="The transformed skull" style="width: 300px;"/></center>
 <center>Figure 2: The Transformed Skull </center><br>
