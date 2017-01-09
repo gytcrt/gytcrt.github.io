@@ -44,6 +44,6 @@ However, it took my mac pro about 12 hours to run 100 iterations, and I don’t 
 <center><img src="http://gytcrt.github.io/public/img/01-08-nn/neural-datafest.jpg" alt="neural datafest" style="width: 500px;"/></center>
 
 
-I think the problem is this algorithm is good at capturing styles of modern artists like Van Gogh and Claude Monet because the way they used color and brush are very characteristic. While what makes Caravaggio stand out is how he portrayed varies religious figures by realistic observation of physical and emotional human states and dramatic use of lighting. In addition, Caravaggio is also the best story teller in Fine Art history. Therefore, the styles of classical artists are harder to mimic for present AI technology because of their intricacy and delicacy.
+The problem might be this algorithm is good at capturing styles of modern artists like Van Gogh and Claude Monet because the way they used color and brush are very characteristic. While what makes Caravaggio stand out is how he portrayed varies religious figures by realistic observation of physical and emotional human states and dramatic use of lighting. In addition, Caravaggio is also the best story teller in Fine Art history. Therefore, the styles of classical artists are harder to mimic for present AI technology because of their intricacy and delicacy.
 
 Can AI easily easily mimic artists like Caravaggio? My answer is: we still have a long way to go.
