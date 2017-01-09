@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Shiny&#58 easily passing a long list of items to selectInput choices &middot; Andrea Gao</title>
+  <title>Can AI easily mimic Caravaggio? &middot; Andrea Gao</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|PT+Serif:400,400italic,700,700italic" type="text/css">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/gytcrt.github.io/public/css/jekyll-github.css">
   <link rel="stylesheet" href="/gytcrt.github.io/font-awesome/css/font-awesome.min.css">
 
-  <link rel="canonical" href="http://gytcrt.github.io/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/" />
+  <link rel="canonical" href="http://gytcrt.github.io/gytcrt.github.io/2017/01/08/NN-Caravaggio/" />
 
   
 
@@ -54,42 +54,61 @@
 
 
 <article class="post">
-  <h1 class="post-title">Shiny&#58 easily passing a long list of items to selectInput choices</h1>
+  <h1 class="post-title">Can AI easily mimic Caravaggio?</h1>
   <div class="post-date">
-    <time datetime="2016-08-11T00:00:00-04:00">08/11/16</time>
+    <time datetime="2017-01-08T00:00:00-05:00">01/08/17</time>
     <span>on <a href="/gytcrt.github.io/tag/Blog/">Blog</a></span>
   </div>
   
   <hr/>
-  <p>            Recently, I’m working on R Shiny to design a Web App. I found the example of selectInput shown on <a href="http://shiny.rstudio.com/reference/shiny/latest/selectInput.html" target="_blank">Shiny Reference</a> is not helpful once we have a list of items like <a href="/gytcrt.github.io/public/files/countries.txt" target="_blank">this</a>.</p>
+  <p>Artificial Intelligence technology performed an awesome show last year. Mimicking artistic style of Fine Art is surprisingly successful, which can be obviously proved by the popularity of a photo-editing application, <a href="http://prisma-ai.com/" target="_blank">Prisma</a> .</p>
 
-<p>Are we gonna list all the items one by one?</p>
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/prisma.jpg" alt="Prisma Image" style="width: 500px;" /></center>
+<center> Picture edited by Prisma</center>
+<p><br /></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">selectInput</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span> <span class="s2">"Countries:"</span><span class="p">,</span>
-            <span class="n">c</span><span class="p">(</span><span class="s2">"Afghanistan"</span> <span class="o">=</span> <span class="s2">"AF"</span><span class="p">,</span>
-              <span class="s2">"Albania"</span> <span class="o">=</span> <span class="s2">"AL"</span><span class="p">,</span>
-              <span class="s2">"Algeria"</span> <span class="o">=</span> <span class="s2">"DZ"</span><span class="p">))</span>
-</code></pre>
-</div>
-<p>NO WAY:)</p>
+<p>The key algorithm of mimicking artistic style is <a href="https://en.wikipedia.org/wiki/Artificial_neural_network" target="_blank">neural networks</a> , and this paper, <a href="https://arxiv.org/abs/1508.06576" target="_blank">Neural Algorithm of Artistic Style</a> , elaborates the details of implementing neural networks. There are some open-source implementations of this algorithm on Github, like <a href="https://github.com/jcjohnson/neural-style" target="_blank">this</a>  and <a href="https://github.com/anishathalye/neural-style" target="_blank">this</a> . These guys have done good job, and most of images they got are pretty fancy and fantastic.</p>
 
-<p>            Here we’d better read the countries and their abbreviations as a data frame and pass them to selectInput choices as a list.</p>
+<p>For example, <a href="http://www.anishathalye.com/2015/12/19/an-ai-that-can-mimic-any-artist/" target="_blank">Anish Athalye</a> used these two images to produce a new image with <a href="https://afremov.com/" target="_blank">Leonid Afremov</a>  style.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1"># Read the countries and their abbreviation as data frame
-</span><span class="n">countries.list</span> <span class="o">&lt;-</span> <span class="n">read.table</span><span class="p">(</span><span class="s2">"countries.txt"</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">"|"</span><span class="p">,</span>
-                             <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">quote</span> <span class="o">=</span> <span class="s2">""</span><span class="p">,</span>
-                             <span class="n">col.names</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"abbr"</span><span class="p">,</span> <span class="s2">"country"</span><span class="p">))</span>
-<span class="c1"># Make the data frame as a list
-</span><span class="n">choice.country</span> <span class="o">&lt;-</span> <span class="n">as.list</span><span class="p">(</span><span class="n">countries.list</span><span class="o">$</span><span class="n">abbr</span><span class="p">)</span>
-<span class="n">names</span><span class="p">(</span><span class="n">choice.country</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">countries.list</span><span class="o">$</span><span class="n">country</span>
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/rain-princess.jpg" alt="Rain Princess" style="width: 500px;" /></center>
+<center> Rain Princess by Leonid Afremov</center>
+<p><br /></p>
 
-<span class="c1"># Pass the list to selectInput choices
-</span><span class="n">selectInput</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span> <span class="s2">"Countries:"</span><span class="p">,</span>
-            <span class="n">choices</span><span class="o">=</span><span class="n">choice.country</span><span class="p">)</span>
-</code></pre>
-</div>
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/dome.jpg" alt="Demo" style="width: 500px;" /></center>
+<center> A photo of a dome</center>
+<p><br /></p>
 
-<p>            It’s more decent!</p>
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/dome-afremov.png" alt="Demo with Afremov's style" style="width: 500px;" /></center>
+<center> The dome with Afremov's style</center>
+<p><br /></p>
+
+<p>Given the open-source implementation and the amazing result, I was definitely eager to mimic more masterpieces. Therefore, I installed <a href="https://github.com/anishathalye/neural-style" target="_blank">neural style</a> , and tried to combine my picture with <a href="https://en.wikipedia.org/wiki/Caravaggio" target="_blank">Caravaggio</a> ’s style.</p>
+
+<p>The original photo: my teammates and I were working for <a href="http://www2.stat.duke.edu/datafest/" target="_blank">Datafest competition 2016</a></p>
+
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/datafest.jpg" alt="datafest" style="width: 500px;" /></center>
+<p><br /></p>
+
+<p>Caravaggio’s work, which I used to learn his style from:</p>
+
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/Cena_in_Emmaus.jpg" alt="supper" style="width: 500px;" /></center>
+<center> The Supper at Emmaus </center>
+<p><br /></p>
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/John.jpg" alt="john" style="width: 500px;" /></center>
+<center> John in the Wilderness </center>
+<p><br /></p>
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/Taking_of_Christ.jpg" alt="datafest" style="width: 500px;" /></center>
+<center> The Taking of Christ </center>
+<p><br /></p>
+
+<p>However, it took my mac pro about 12 hours to run 100 iterations, and I don’t think the result is similar to any Caravaggio’s work at all (</p>
+
+<center><img src="http://gytcrt.github.io/public/img/01-18-nn/neural-datafest.jpg" alt="neural datafest" style="width: 500px;" /></center>
+
+<p>I think the problem is this algorithm is good at capturing styles of modern artists like Van Gogh and Claude Monet because the way they used color and brush are very characteristic. While what makes Caravaggio stand out is how he portrayed varies religious figures by realistic observation of physical and emotional human states and dramatic use of lighting. In addition, Caravaggio is also the best story teller in Fine Art history. Therefore, the styles of classical artists are harder to mimic for present AI technology because of their intricacy and delicacy.</p>
+
+<p>Can AI easily easily mimic artists like Caravaggio? My answer is: we still have a long way to go.</p>
 
 </article>
 
@@ -115,17 +134,8 @@
     
     
       
-      
-        <li>
-          <h4>
-            <a href="/gytcrt.github.io/2017/01/08/NN-Caravaggio/">
-              <span>Can AI easily mimic Caravaggio?</span>
-              <small>01/08/17</small>
-            </a>
-          </h4>
-        </li>
-      
-    
+        
+        
       
       
         <li>
@@ -152,6 +162,15 @@
     
       
       
+        <li>
+          <h4>
+            <a href="/gytcrt.github.io/2016/09/08/A-genetic-example-of-Latent-Dirichlet-Allocation/">
+              <span>A genetic example of Latent Dirichlet Allocation</span>
+              <small>09/08/16</small>
+            </a>
+          </h4>
+        </li>
+      
     
   </ul>
 </aside>
@@ -164,8 +183,8 @@
 
   <script>
     var disqus_config = function () {
-      this.page.url = 'http://gytcrt.github.io/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/';
-      this.page.identifier = '/2016/08/11/RShiny:-easily-passing-a-long-list-of-items-to-selectInput-choices';
+      this.page.url = 'http://gytcrt.github.io/gytcrt.github.io/2017/01/08/NN-Caravaggio/';
+      this.page.identifier = '/2017/01/08/NN-Caravaggio';
     };
 
     var loaded = false;

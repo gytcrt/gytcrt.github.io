@@ -33,4 +33,4 @@ I am looking for more experiences and adventures.
 ### Images Reference
 *  Blog: Sangluan Tie(丧乱帖) by [Wang Xizhi(王羲之)](https://en.wikipedia.org/wiki/Wang_Xizhi){:target="_blank"}
 *  Project: Pipa Xing(琵琶行) by [Wen Zhengming(文徵明)](https://en.wikipedia.org/wiki/Wen_Zhengming){:target="_blank"}
-*  About me: [Dr. Pozzi Comes Home](https://hammer.ucla.edu/blog/2014/10/dr-pozzi-comes-home/){:target="_blank"} by [John Singer Sargent](https://en.wikipedia.org/wiki/John_Singer_Sargent){:target="_blank"}, 1881
+*  About me: [John the Baptist](https://en.wikipedia.org/wiki/John_the_Baptist_(Caravaggio)){:target="_blank"} by [Caravaggio](https://en.wikipedia.org/wiki/Caravaggio){:target="_blank"}, 1604

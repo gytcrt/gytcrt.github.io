@@ -4,13 +4,741 @@
  <title>Andrea Gao</title>
  <link href="http://gytcrt.github.io/gytcrt.github.io/atom.xml" rel="self"/>
  <link href="http://gytcrt.github.io/gytcrt.github.io/"/>
- <updated>2016-11-07T19:36:00-05:00</updated>
+ <updated>2017-01-09T00:25:05-05:00</updated>
  <id>http://gytcrt.github.io</id>
  <author>
    <name>Andrea Gao</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Can AI easily mimic Caravaggio?</title>
+   <link href="http://gytcrt.github.io/gytcrt.github.io/2017/01/08/NN-Caravaggio/"/>
+   <updated>2017-01-08T00:00:00-05:00</updated>
+   <id>http://gytcrt.github.io/2017/01/08/NN-Caravaggio</id>
+   <content type="html">&lt;p&gt;Artificial Intelligence technology performed an awesome show last year. Mimicking artistic style of Fine Art is surprisingly successful, which can be obviously proved by the popularity of a photo-editing application, &lt;a href=&quot;http://prisma-ai.com/&quot; target=&quot;_blank&quot;&gt;Prisma&lt;/a&gt; .&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/prisma.jpg&quot; alt=&quot;Prisma Image&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt; Picture edited by Prisma&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The key algorithm of mimicking artistic style is &lt;a href=&quot;https://en.wikipedia.org/wiki/Artificial_neural_network&quot; target=&quot;_blank&quot;&gt;neural networks&lt;/a&gt; , and this paper, &lt;a href=&quot;https://arxiv.org/abs/1508.06576&quot; target=&quot;_blank&quot;&gt;Neural Algorithm of Artistic Style&lt;/a&gt; , elaborates the details of implementing neural networks. There are some open-source implementations of this algorithm on Github, like &lt;a href=&quot;https://github.com/jcjohnson/neural-style&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;  and &lt;a href=&quot;https://github.com/anishathalye/neural-style&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt; . These guys have done good job, and most of images they got are pretty fancy and fantastic.&lt;/p&gt;
+
+&lt;p&gt;For example, &lt;a href=&quot;http://www.anishathalye.com/2015/12/19/an-ai-that-can-mimic-any-artist/&quot; target=&quot;_blank&quot;&gt;Anish Athalye&lt;/a&gt; used these two images to produce a new image with &lt;a href=&quot;https://afremov.com/&quot; target=&quot;_blank&quot;&gt;Leonid Afremov&lt;/a&gt;  style.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/rain-princess.jpg&quot; alt=&quot;Rain Princess&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt; Rain Princess by Leonid Afremov&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/dome.jpg&quot; alt=&quot;Demo&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt; A photo of a dome&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/dome-afremov.png&quot; alt=&quot;Demo with Afremov&#39;s style&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt; The dome with Afremov&#39;s style&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Given the open-source implementation and the amazing result, I was definitely eager to mimic more masterpieces. Therefore, I installed &lt;a href=&quot;https://github.com/anishathalye/neural-style&quot; target=&quot;_blank&quot;&gt;neural style&lt;/a&gt; , and tried to combine my picture with &lt;a href=&quot;https://en.wikipedia.org/wiki/Caravaggio&quot; target=&quot;_blank&quot;&gt;Caravaggio&lt;/a&gt; ’s style.&lt;/p&gt;
+
+&lt;p&gt;The original photo: my teammates and I were working for &lt;a href=&quot;http://www2.stat.duke.edu/datafest/&quot; target=&quot;_blank&quot;&gt;Datafest competition 2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/datafest.jpg&quot; alt=&quot;datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Caravaggio’s work, which I used to learn his style from:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/Cena_in_Emmaus.jpg&quot; alt=&quot;supper&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt; The Supper at Emmaus &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/John.jpg&quot; alt=&quot;john&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt; John in the Wilderness &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/Taking_of_Christ.jpg&quot; alt=&quot;datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt; The Taking of Christ &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, it took my mac pro about 12 hours to run 100 iterations, and I don’t think the result is similar to any Caravaggio’s work at all (&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/neural-datafest.jpg&quot; alt=&quot;neural datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;I think the problem is this algorithm is good at capturing styles of modern artists like Van Gogh and Claude Monet because the way they used color and brush are very characteristic. While what makes Caravaggio stand out is how he portrayed varies religious figures by realistic observation of physical and emotional human states and dramatic use of lighting. In addition, Caravaggio is also the best story teller in Fine Art history. Therefore, the styles of classical artists are harder to mimic for present AI technology because of their intricacy and delicacy.&lt;/p&gt;
+
+&lt;p&gt;Can AI easily easily mimic artists like Caravaggio? My answer is: we still have a long way to go.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>&lt;span style=&quot;font-variant:small-caps;&quot;&gt;Duke University, Statistical
+Science&lt;/span&gt;\
+\[25pt\]
+
+------------------------------------------------------------------------
+
+\
+Text Retrieval Based on the LDA Model\
+
+------------------------------------------------------------------------
+
+\
+</title>
+   <link href="http://gytcrt.github.io/gytcrt.github.io/2016/12/16/topic-modeling-with-latent-dirichlet-allocation/"/>
+   <updated>2016-12-16T00:00:00-05:00</updated>
+   <id>http://gytcrt.github.io/2016/12/16/topic-modeling-with-latent-dirichlet-allocation</id>
+   <content type="html">&lt;p&gt;Topic models like Latent Dirichlet Allocation have been widely applied
+to different fields. However, even text retrieval is naturally related
+to latent topics of a corpus, the application of the LDA model in this
+field is still novel. In this paper, I try to study how to use the LDA
+model to retrieve relevant documents for a given query. I propose a text
+retrieval system based on the LDA model, and test the accuracy and
+efficiency of the system on TREC Ad Hoc 8 collection. The experiment
+shows that text retrieval based on the LDA model is helpful and doable.\
+\
+&lt;em&gt;Keywords:&lt;/em&gt; latent dirichlet allocation, text retrieval, topic modeling&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Text retrieval is a branch of information retrieval but the information
+is stored primarily in the form of text. It has become increasingly
+critical today, since it is the fundamental basis of all internet search
+engines. In previous researches, documents are typically represented by
+the “bag-of-words” model, which assumes the order of every word in a
+document is exchangeable. This model enables researchers to reduce each
+document to a vector of counts of words, and process a corpus as a large
+sparse matrix[@lda].\
+\
+Modeling large corpus has been studied since the introduction of
+&lt;em&gt;tf-idf&lt;/em&gt; scheme [@tfidf]. After that, information retrieval (IR)
+researchers have proposed several notable techniques like Latent
+Semantic Indexing probabilistic Latent Semantic Indexing(pLSI). These
+models aim to reduce dimensions of corpus and represent documents by
+latent “topics”. Recently, Latent Dirichlet Allocation (LDA)[@lda] has
+become the most popular model in machine learning community. LDA is
+similar to pLSI, but it is basically a Bayesian version of pLSI because
+it assumes the topic has a Dirichlet prior distribution. Thus topics
+inferred by LDA are more interpretable than pLSI. Since the LDA model is
+highly extendable, many LDA-based models such as &lt;em&gt;supervised topic
+modeling&lt;/em&gt;[@slda] and &lt;em&gt;correlated topic models&lt;/em&gt;[@ctm] have been proposed
+to the present.\
+\
+The LDA model has been cited and applied extendedly in text-based fields
+including bioinformatics, document clustering, web mining and spam
+detection. However, application of LDA in IR field is still novel.
+Therefore, I propose a LDA-based model to retrieval text in this paper.
+Section 2 introduces related work of the LDA-based model, and the Ad Hoc
+test collection 8 from Text REtrieval Conference (TREC). I explain the
+LDA-based retrieval model in Section 3. Section 4 shows the experiments
+and results of the LDA-based retrieval model on TREC Ad Hoc test
+collection 8. Conclusion and further work are given and discussed in
+Section 5.&lt;/p&gt;
+
+&lt;h1 id=&quot;related-work&quot;&gt;Related Work&lt;/h1&gt;
+
+&lt;h2 id=&quot;latent-dirichlet-allocation&quot;&gt;Latent Dirichlet Allocation&lt;/h2&gt;
+
+&lt;p&gt;Blei, Ng and Jordan (2003) proposed a widely used topic model in natural
+language processing, latent dirichlet allocation (LDA). LDA is a
+three-level hierarchical Bayesian model capable of automatically
+discovering latent topics of documents in a corpus. LDA uses a
+generative model to explain how the observed words in documents of a
+corpus are generated from the topic (latent variables). The following
+graph shows the graphical model representation of LDA:\&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;LDA.png&quot; alt=&quot;The graphic model of LDA[]{data-label=&amp;quot;Figure1&amp;quot;}&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Figure 2.1 is “plates” representing LDA. The outer plate represents
+documents, while the inner plate represents the repeated choices of
+topics and words within a document. M denotes the number of documents of
+the corpus, N is the number of words in a document, and V indicates the
+vocabulary size of the corpus. Blei and Ng define the following terms:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\alpha$ is the parameter of the Dirichlet prior of the per-document
+topic distribution.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\beta_i$ is the word distribution for topic $z$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\theta_m$ is the topic distribution for document $m$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$z_{mw}$ is the topic of word w in document $m$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;LDA assumes the following generative process for each document $m$ in a
+corpus:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Choose $N\sim Poisson\left( \xi  \right)$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Choose $\theta \sim Dir\left( \alpha  \right)$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For each word $w_n$ : Choose a topic
+$z_n \sim Multinomial \left( \theta  \right)$. Choose a word
+$w_n \sim Multinomial \left( z_n  \right)$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Based on variation inference or Gibbs sampling, the LDA model is widely
+implemented for information retrieval, classification and summarization.
+In addition, Blei has proposed correlated topic models[@ctm] and
+supervised topic models[@slda], which are direct extensions of the
+original LDA model.&lt;/p&gt;
+
+&lt;h2 id=&quot;text-retrieval-conference-ad-hoc-test-collection&quot;&gt;Text REtrieval Conference: Ad Hoc Test Collection&lt;/h2&gt;
+
+&lt;p&gt;While LDA has been utilized and extended to different fields, its
+application in text retrieval is still novel. The Text REtrieval
+Conference (TREC) provides large test collections to promote progress on
+text retrieval[@trec].\
+\
+The Text REtrieval Conference is co-sponsored by the National Institute
+of Standards and Technology (NIST) and the U.S. Department of Defense,
+and was started in 1992. The basic goal of TREC is to help researchers
+develop better text retrieval systems and encourage communication among
+text retrieval researchers [4]. During the last 25 years, the number
+of participants has increased, and the retrieval tasks and data
+collection have been optimized.\
+\
+Every TREC conference has two tasks: the routing task and the ad hoc
+task. The ad hoc task provides roughly 2 Gigabytes of documents, 50 new
+topics (queries) and relevant judgments that either are relevant or not
+for each topic-document pair. Documents are tagged by different sections
+and researchers can easily parse them by programming. Fig.1 shows a
+document in TREC Ad Hoc 8 collection. A typical topic (See Fig.2)
+contains 3 parts: topic title, description and narrative. Its length is
+usually longer than a real query. However, the length maintains the
+clarity of topics.\&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;trecdoc.png&quot; alt=&quot;A document extracted from TREC Ad Hoc 8
+collection[]{data-label=&amp;quot;Figure2&amp;quot;}&quot; /&gt;{width=”100.00000%”}&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;trectopic.png&quot; alt=&quot;A sample topic extracted from TREC Ad Hoc 8
+collection[]{data-label=&amp;quot;Figure3&amp;quot;}&quot; /&gt;{width=”100.00000%”}&lt;/p&gt;
+
+&lt;p&gt;Different retrieval systems can be trained on the corpus and topics
+(queries), and evaluated on the relevant judgments. 8 TREC Ad Hoc
+collections have been used and archived to the present, and TREC Ad Hoc
+collection 8 might be the best subcollection to use in text retrieval
+evaluation because it is the largest test collection and the topics are
+more consistent [5]. The documents in TREC Ad Hoc 8 are collected from
+4 different sources: The Federal Register, The Financial Times, The LA
+Times and The Foreign Broadcast Information Service, and the relevant
+judgment of each topic-document pair is assumed to be complete. My task
+is to retrieve relevent documents for any given query.&lt;/p&gt;
+
+&lt;h1 id=&quot;lda-based-text-retrieval&quot;&gt;LDA based Text Retrieval&lt;/h1&gt;
+
+&lt;p&gt;A text retrieval system has two main tasks: finding relevant documents
+for users by matching their queries and evaluating and sorting the
+matching results according to relevance. This section mainly illustrates
+how to retrieve documents relevant to a given query. To simplify the
+retrieval process, I assume given a query I would know several relevent
+and non-relevent documents before I retrieve more documents from the
+whole corpus.\
+\
+To effectively apply topic modeling to corpus, the first step is to
+clean corpus and represent documents by vector of words. Naturally,
+there are punctuations, capitalized letters, numbers, and commons words
+such as &lt;em&gt;the&lt;/em&gt;, &lt;em&gt;a&lt;/em&gt;, &lt;em&gt;and&lt;/em&gt; in an English article, but we commonly remove
+them, because they are basically nosies in natural language processing
+techniques. Meanwhile, a word might be in different forms in a document.
+For instance, &lt;em&gt;math&lt;/em&gt;, &lt;em&gt;mathematics&lt;/em&gt;, &lt;em&gt;mathematical&lt;/em&gt; share similar
+meaning, and treating them as a single token &lt;em&gt;math&lt;/em&gt; would be more
+informative and useful in topic modeling. &lt;em&gt;Stemming&lt;/em&gt; process reduces
+words to their root. Moreover, using n-gram model on corpus would
+increase accuracy of topic modeling because n-gram is more likely to
+capture more topic-related phrases than single word.\
+\
+The process of retrieve relevant documents is as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tokenize, remove stop words and stem every document in the corpus.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Process bi-gramming on every document, and remain bi-grams which are
+statistically significant in the corpus.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Perform the LDA model to detect latent topics of documents.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Predict if a document is relevent to the given query based on the
+similarity of distribution of latent topics between the document and
+the known relevant and non-relevent documents.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Return predicted relevent documents.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;experiments-and-results&quot;&gt;Experiments and Results&lt;/h1&gt;
+
+&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
+
+&lt;p&gt;I conducted text retrieval experiment on 3000 sample documents from TREC
+Ad Hoc 8 collection with 10 queries from topic 401-450 , because
+bigramming and fit the LDA model on a sample corpus are considerably
+less time consuming than the whole TREC Ad Hoc 8 collection. The whole
+corpus, queries and relevent judgements are same as participants used in
+TREC. Therefore, I can easily extend the experiment on the whole TREC Ad
+Hoc 8 collection, and compare the result with other participants’ in the
+next step.\
+\
+Since relevent judgment for each query-document pair is available, each
+time I tried to experiment on a query, I randomly split the relevent
+documents into training set and test set, and training set accounts 10%
+of all relevent documents.&lt;/p&gt;
+
+&lt;h2 id=&quot;retrieval&quot;&gt;Retrieval&lt;/h2&gt;
+
+&lt;p&gt;After mixing all relevent documents with sample documents, cleaning and
+bigramming the corpus, I fit the LDA model on the corpus. In this
+experiment, the &lt;em&gt;correlated topic model&lt;/em&gt; (CTM) generally preformed
+better than the original LDA model, because the query usually contains
+several related topics, and CTM is capable of capturing correlated
+latent topics. Tuning the number of latent topics by cross validation, I
+found setting $k=30$ would be the best choice here.\
+\
+CTM model returned the topic distribution for each document in the
+corpus. Given the training set, I could measure which document in the
+rest documents is similar to the training set, which means the document
+is relevent to the query. To measure the similarity, I used &lt;em&gt;Support
+Vector Machine&lt;/em&gt; (SVM) to classify the documents in the test set. SVM is
+a powerful algorithm to classify linear or non-linear data [@svm].&lt;/p&gt;
+
+&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
+
+&lt;p&gt;For each query, I ran 10 folds cross validation on relevant documents,
+and recorded the average &lt;em&gt;precision&lt;/em&gt; and &lt;em&gt;recall&lt;/em&gt; rate as in Table 4.1.
+The retrieval results of different queries are generally stable and
+consistent. Most average precisions are around 0.3 to 0.4, and the best
+average precision is 0.4144. recalls are around 0.4 to 0.5. With regard
+to recall, the average recalls basically range from 0.4 to 0.5, and the
+best average recall is 0.5337.\&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            precision   recall   ----------- ----------- --------
+query 434      0.4144   0.3335
+query 401      0.3209   0.5244
+query 450      0.3597   0.4155
+query 439      0.3040   0.5337
+query 426      0.3581   0.4873
+query 436      0.3353   0.5060
+query 438      0.2985   0.5091
+query 424      0.3562   0.5300
+query 425      0.3814   0.4824
+query 446      0.3307   0.5120
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;: Average Precision and Recall rate of the 10 queries&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion-and-future-work&quot;&gt;Conclusion and Future Work&lt;/h1&gt;
+
+&lt;p&gt;Comparing with previous TREC results[@trec] (shown in Figure 4.1), the
+LDA based retrieval model is acceptable and doable. Obviously, the LDA
+model is a feasible and promising algorithm to improve text retrieval
+system. Topic modeling can help retrieval system better identify
+relevant documents based on inference of latent topic within a corpus.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;trecresult.png&quot; alt=&quot;Recall-precision graph for ad hoc
+retrieval[]{data-label=&amp;quot;Figure1&amp;quot;}&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The LDA model has many attractive features; however, applying it in a
+large corpus like the whole TREC Ad Hoc 8 collections seems challenging.
+In my experiment, I merely bigrammed and fit CTM model on 3000
+documents, because as corpus size increases, bigramming and fitting CTM
+model on larger corpus become essentially time comsuming. Using a cloud
+server and parallelizing the process might be necessary to apply the LDA
+model to real-world dataset. Moreover, I assumed that I knew part of
+relevent documents given the query, and tried to find other relevent
+documents based on the known relevent documents. In real text retrieval
+system, given a new query, I might not know any relevent document.
+Identifying the most relevent documents would be the first problem for
+this test retrieval system.\
+\
+For future work, I would enlarge the size of corpus in my retrieval
+experiment; meanwhile, expedite bigramming and LDA fitting process by
+using Spark[@ldaspark] on cloud. In addition, query likelihood
+model[@ldabased] might be a possible way to identify most relevent
+documents as training set for LDA-based text retrieval system.&lt;/p&gt;
+
+&lt;p&gt;[9]{}&lt;/p&gt;
+
+&lt;p&gt;Blei, David M., Andrew Y. Ng, and Michael I. Jordan. “Latent dirichlet
+allocation.” &lt;em&gt;Journal of machine Learning research&lt;/em&gt; 3.Jan (2003):
+993-1022.&lt;/p&gt;
+
+&lt;p&gt;Salton, Gerard, and Michael J. McGill. “Introduction to modern
+information retrieval.” (1986).&lt;/p&gt;
+
+&lt;p&gt;Mcauliffe, Jon D., and David M. Blei. “Supervised topic models.”
+&lt;em&gt;Advances in neural information processing systems&lt;/em&gt;. 2008.&lt;/p&gt;
+
+&lt;p&gt;Blei, David, and John Lafferty. “Correlated topic models.” &lt;em&gt;Advances in
+neural information processing systems&lt;/em&gt; 18 (2006): 147.&lt;/p&gt;
+
+&lt;p&gt;Voorhees, Ellen M., and Donna Harman. “Overview of the sixth text
+retrieval conference (TREC-6).”  &lt;em&gt;Information Processing &amp;amp;
+Management&lt;/em&gt; 36.1 (2000): 3-35.&lt;/p&gt;
+
+&lt;p&gt;Blair, David C., and Melvin E. Maron. “An evaluation of retrieval
+effectiveness for a full-text document-retrieval system.”
+&lt;em&gt;Communications of the ACM&lt;/em&gt; 28.3 (1985): 289-299.&lt;/p&gt;
+
+&lt;p&gt;Latent Dirichlet allocation on Spark:\
+&lt;em&gt;http://spark.apache.org/docs/latest/mllib-clustering.html#latent-dirichlet-allocation-lda&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Wei, Xing, and W. Bruce Croft. “LDA-based document models for ad-hoc
+retrieval.” Proceedings of the 29th annual international ACM SIGIR
+conference on Research and development in information retrieval. ACM,
+2006.&lt;/p&gt;
+
+&lt;p&gt;Manning, Christopher, et al. &lt;em&gt;Introduction to Information Retrieval,
+Cambridge University Press&lt;/em&gt;. 2008.&lt;/p&gt;
+
+&lt;p&gt;Tong, Simon, and Daphne Koller. “Support vector machine active learning
+with applications to text classification.” &lt;em&gt;Journal of machine learning
+research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Text Retrieval Based on the LDA Model</title>
+   <link href="http://gytcrt.github.io/gytcrt.github.io/2016/12/09/Text-Retrieval-Based-on-the-LDA-Model/"/>
+   <updated>2016-12-09T00:00:00-05:00</updated>
+   <id>http://gytcrt.github.io/2016/12/09/Text-Retrieval-Based-on-the-LDA-Model</id>
+   <content type="html">&lt;p&gt;Topic models like Latent Dirichlet Allocation have been widely applied
+to different fields. However, even text retrieval is naturally related
+to latent topics of a corpus, the application of the LDA model in this
+field is still novel. In this paper, I try to study how to use the LDA
+model to retrieve relevant documents for a given query. I propose a text
+retrieval system based on the LDA model, and test the accuracy and
+efficiency of the system on TREC Ad Hoc 8 collection. The experiment
+shows that text retrieval based on the LDA model is helpful and doable.\
+\
+&lt;em&gt;Keywords:&lt;/em&gt; latent dirichlet allocation, text retrieval, topic modeling&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Text retrieval is a branch of information retrieval but the information
+is stored primarily in the form of text. It has become increasingly
+critical today, since it is the fundamental basis of all internet search
+engines. In previous researches, documents are typically represented by
+the “bag-of-words” model, which assumes the order of every word in a
+document is exchangeable. This model enables researchers to reduce each
+document to a vector of counts of words, and process a corpus as a large
+sparse matrix[@lda].\
+\
+Modeling large corpus has been studied since the introduction of
+&lt;em&gt;tf-idf&lt;/em&gt; scheme [@tfidf]. After that, information retrieval (IR)
+researchers have proposed several notable techniques like Latent
+Semantic Indexing probabilistic Latent Semantic Indexing(pLSI). These
+models aim to reduce dimensions of corpus and represent documents by
+latent “topics”. Recently, Latent Dirichlet Allocation (LDA)[@lda] has
+become the most popular model in machine learning community. LDA is
+similar to pLSI, but it is basically a Bayesian version of pLSI because
+it assumes the topic has a Dirichlet prior distribution. Thus topics
+inferred by LDA are more interpretable than pLSI. Since the LDA model is
+highly extendable, many LDA-based models such as &lt;em&gt;supervised topic
+modeling&lt;/em&gt;[@slda] and &lt;em&gt;correlated topic models&lt;/em&gt;[@ctm] have been proposed
+to the present.\
+\
+The LDA model has been cited and applied extendedly in text-based fields
+including bioinformatics, document clustering, web mining and spam
+detection. However, application of LDA in IR field is still novel.
+Therefore, I propose a LDA-based model to retrieval text in this paper.
+Section 2 introduces related work of the LDA-based model, and the Ad Hoc
+test collection 8 from Text REtrieval Conference (TREC). I explain the
+LDA-based retrieval model in Section 3. Section 4 shows the experiments
+and results of the LDA-based retrieval model on TREC Ad Hoc test
+collection 8. Conclusion and further work are given and discussed in
+Section 5.&lt;/p&gt;
+
+&lt;h1 id=&quot;related-work&quot;&gt;Related Work&lt;/h1&gt;
+
+&lt;h2 id=&quot;latent-dirichlet-allocation&quot;&gt;Latent Dirichlet Allocation&lt;/h2&gt;
+
+&lt;p&gt;Blei, Ng and Jordan (2003) proposed a widely used topic model in natural
+language processing, latent dirichlet allocation (LDA). LDA is a
+three-level hierarchical Bayesian model capable of automatically
+discovering latent topics of documents in a corpus. LDA uses a
+generative model to explain how the observed words in documents of a
+corpus are generated from the topic (latent variables). The following
+graph shows the graphical model representation of LDA:\&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;LDA.png&quot; alt=&quot;The graphic model of LDA[]{data-label=&amp;quot;Figure1&amp;quot;}&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Figure 2.1 is “plates” representing LDA. The outer plate represents
+documents, while the inner plate represents the repeated choices of
+topics and words within a document. M denotes the number of documents of
+the corpus, N is the number of words in a document, and V indicates the
+vocabulary size of the corpus. Blei and Ng define the following terms:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\alpha$ is the parameter of the Dirichlet prior of the per-document
+topic distribution.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\beta_i$ is the word distribution for topic $z$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$\theta_m$ is the topic distribution for document $m$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$z_{mw}$ is the topic of word w in document $m$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;LDA assumes the following generative process for each document $m$ in a
+corpus:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Choose $N\sim Poisson\left( \xi  \right)$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Choose $\theta \sim Dir\left( \alpha  \right)$.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For each word $w_n$ : Choose a topic
+$z_n \sim Multinomial \left( \theta  \right)$. Choose a word
+$w_n \sim Multinomial \left( z_n  \right)$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Based on variation inference or Gibbs sampling, the LDA model is widely
+implemented for information retrieval, classification and summarization.
+In addition, Blei has proposed correlated topic models[@ctm] and
+supervised topic models[@slda], which are direct extensions of the
+original LDA model.&lt;/p&gt;
+
+&lt;h2 id=&quot;text-retrieval-conference-ad-hoc-test-collection&quot;&gt;Text REtrieval Conference: Ad Hoc Test Collection&lt;/h2&gt;
+
+&lt;p&gt;While LDA has been utilized and extended to different fields, its
+application in text retrieval is still novel. The Text REtrieval
+Conference (TREC) provides large test collections to promote progress on
+text retrieval[@trec].\
+\
+The Text REtrieval Conference is co-sponsored by the National Institute
+of Standards and Technology (NIST) and the U.S. Department of Defense,
+and was started in 1992. The basic goal of TREC is to help researchers
+develop better text retrieval systems and encourage communication among
+text retrieval researchers [4]. During the last 25 years, the number
+of participants has increased, and the retrieval tasks and data
+collection have been optimized.\
+\
+Every TREC conference has two tasks: the routing task and the ad hoc
+task. The ad hoc task provides roughly 2 Gigabytes of documents, 50 new
+topics (queries) and relevant judgments that either are relevant or not
+for each topic-document pair. Documents are tagged by different sections
+and researchers can easily parse them by programming. Fig.1 shows a
+document in TREC Ad Hoc 8 collection. A typical topic (See Fig.2)
+contains 3 parts: topic title, description and narrative. Its length is
+usually longer than a real query. However, the length maintains the
+clarity of topics.\&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;trecdoc.png&quot; alt=&quot;A document extracted from TREC Ad Hoc 8
+collection[]{data-label=&amp;quot;Figure2&amp;quot;}&quot; /&gt;{width=”100.00000%”}&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;trectopic.png&quot; alt=&quot;A sample topic extracted from TREC Ad Hoc 8
+collection[]{data-label=&amp;quot;Figure3&amp;quot;}&quot; /&gt;{width=”100.00000%”}&lt;/p&gt;
+
+&lt;p&gt;Different retrieval systems can be trained on the corpus and topics
+(queries), and evaluated on the relevant judgments. 8 TREC Ad Hoc
+collections have been used and archived to the present, and TREC Ad Hoc
+collection 8 might be the best subcollection to use in text retrieval
+evaluation because it is the largest test collection and the topics are
+more consistent [5]. The documents in TREC Ad Hoc 8 are collected from
+4 different sources: The Federal Register, The Financial Times, The LA
+Times and The Foreign Broadcast Information Service, and the relevant
+judgment of each topic-document pair is assumed to be complete. My task
+is to retrieve relevent documents for any given query.&lt;/p&gt;
+
+&lt;h1 id=&quot;lda-based-text-retrieval&quot;&gt;LDA based Text Retrieval&lt;/h1&gt;
+
+&lt;p&gt;A text retrieval system has two main tasks: finding relevant documents
+for users by matching their queries and evaluating and sorting the
+matching results according to relevance. This section mainly illustrates
+how to retrieve documents relevant to a given query. To simplify the
+retrieval process, I assume given a query I would know several relevent
+and non-relevent documents before I retrieve more documents from the
+whole corpus.\
+\
+To effectively apply topic modeling to corpus, the first step is to
+clean corpus and represent documents by vector of words. Naturally,
+there are punctuations, capitalized letters, numbers, and commons words
+such as &lt;em&gt;the&lt;/em&gt;, &lt;em&gt;a&lt;/em&gt;, &lt;em&gt;and&lt;/em&gt; in an English article, but we commonly remove
+them, because they are basically nosies in natural language processing
+techniques. Meanwhile, a word might be in different forms in a document.
+For instance, &lt;em&gt;math&lt;/em&gt;, &lt;em&gt;mathematics&lt;/em&gt;, &lt;em&gt;mathematical&lt;/em&gt; share similar
+meaning, and treating them as a single token &lt;em&gt;math&lt;/em&gt; would be more
+informative and useful in topic modeling. &lt;em&gt;Stemming&lt;/em&gt; process reduces
+words to their root. Moreover, using n-gram model on corpus would
+increase accuracy of topic modeling because n-gram is more likely to
+capture more topic-related phrases than single word.\
+\
+The process of retrieve relevant documents is as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tokenize, remove stop words and stem every document in the corpus.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Process bi-gramming on every document, and remain bi-grams which are
+statistically significant in the corpus.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Perform the LDA model to detect latent topics of documents.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Predict if a document is relevent to the given query based on the
+similarity of distribution of latent topics between the document and
+the known relevant and non-relevent documents.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Return predicted relevent documents.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;experiments-and-results&quot;&gt;Experiments and Results&lt;/h1&gt;
+
+&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
+
+&lt;p&gt;I conducted text retrieval experiment on 3000 sample documents from TREC
+Ad Hoc 8 collection with 10 queries from topic 401-450 , because
+bigramming and fit the LDA model on a sample corpus are considerably
+less time consuming than the whole TREC Ad Hoc 8 collection. The whole
+corpus, queries and relevent judgements are same as participants used in
+TREC. Therefore, I can easily extend the experiment on the whole TREC Ad
+Hoc 8 collection, and compare the result with other participants’ in the
+next step.\
+\
+Since relevent judgment for each query-document pair is available, each
+time I tried to experiment on a query, I randomly split the relevent
+documents into training set and test set, and training set accounts 10%
+of all relevent documents.&lt;/p&gt;
+
+&lt;h2 id=&quot;retrieval&quot;&gt;Retrieval&lt;/h2&gt;
+
+&lt;p&gt;After mixing all relevent documents with sample documents, cleaning and
+bigramming the corpus, I fit the LDA model on the corpus. In this
+experiment, the &lt;em&gt;correlated topic model&lt;/em&gt; (CTM) generally preformed
+better than the original LDA model, because the query usually contains
+several related topics, and CTM is capable of capturing correlated
+latent topics. Tuning the number of latent topics by cross validation, I
+found setting $k=30$ would be the best choice here.\
+\
+CTM model returned the topic distribution for each document in the
+corpus. Given the training set, I could measure which document in the
+rest documents is similar to the training set, which means the document
+is relevent to the query. To measure the similarity, I used &lt;em&gt;Support
+Vector Machine&lt;/em&gt; (SVM) to classify the documents in the test set. SVM is
+a powerful algorithm to classify linear or non-linear data [@svm].&lt;/p&gt;
+
+&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
+
+&lt;p&gt;For each query, I ran 10 folds cross validation on relevant documents,
+and recorded the average &lt;em&gt;precision&lt;/em&gt; and &lt;em&gt;recall&lt;/em&gt; rate as in Table 4.1.
+The retrieval results of different queries are generally stable and
+consistent. Most average precisions are around 0.3 to 0.4, and the best
+average precision is 0.4144. recalls are around 0.4 to 0.5. With regard
+to recall, the average recalls basically range from 0.4 to 0.5, and the
+best average recall is 0.5337.\&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            precision   recall   ----------- ----------- --------
+query 434      0.4144   0.3335
+query 401      0.3209   0.5244
+query 450      0.3597   0.4155
+query 439      0.3040   0.5337
+query 426      0.3581   0.4873
+query 436      0.3353   0.5060
+query 438      0.2985   0.5091
+query 424      0.3562   0.5300
+query 425      0.3814   0.4824
+query 446      0.3307   0.5120
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;: Average Precision and Recall rate of the 10 queries&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion-and-future-work&quot;&gt;Conclusion and Future Work&lt;/h1&gt;
+
+&lt;p&gt;Comparing with previous TREC results[@trec] (shown in Figure 4.1), the
+LDA based retrieval model is acceptable and doable. Obviously, the LDA
+model is a feasible and promising algorithm to improve text retrieval
+system. Topic modeling can help retrieval system better identify
+relevant documents based on inference of latent topic within a corpus.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;trecresult.png&quot; alt=&quot;Recall-precision graph for ad hoc
+retrieval[]{data-label=&amp;quot;Figure1&amp;quot;}&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The LDA model has many attractive features; however, applying it in a
+large corpus like the whole TREC Ad Hoc 8 collections seems challenging.
+In my experiment, I merely bigrammed and fit CTM model on 3000
+documents, because as corpus size increases, bigramming and fitting CTM
+model on larger corpus become essentially time comsuming. Using a cloud
+server and parallelizing the process might be necessary to apply the LDA
+model to real-world dataset. Moreover, I assumed that I knew part of
+relevent documents given the query, and tried to find other relevent
+documents based on the known relevent documents. In real text retrieval
+system, given a new query, I might not know any relevent document.
+Identifying the most relevent documents would be the first problem for
+this test retrieval system.\
+\
+For future work, I would enlarge the size of corpus in my retrieval
+experiment; meanwhile, expedite bigramming and LDA fitting process by
+using Spark[@ldaspark] on cloud. In addition, query likelihood
+model[@ldabased] might be a possible way to identify most relevent
+documents as training set for LDA-based text retrieval system.&lt;/p&gt;
+
+&lt;p&gt;[9]{}&lt;/p&gt;
+
+&lt;p&gt;Blei, David M., Andrew Y. Ng, and Michael I. Jordan. “Latent dirichlet
+allocation.” &lt;em&gt;Journal of machine Learning research&lt;/em&gt; 3.Jan (2003):
+993-1022.&lt;/p&gt;
+
+&lt;p&gt;Salton, Gerard, and Michael J. McGill. “Introduction to modern
+information retrieval.” (1986).&lt;/p&gt;
+
+&lt;p&gt;Mcauliffe, Jon D., and David M. Blei. “Supervised topic models.”
+&lt;em&gt;Advances in neural information processing systems&lt;/em&gt;. 2008.&lt;/p&gt;
+
+&lt;p&gt;Blei, David, and John Lafferty. “Correlated topic models.” &lt;em&gt;Advances in
+neural information processing systems&lt;/em&gt; 18 (2006): 147.&lt;/p&gt;
+
+&lt;p&gt;Voorhees, Ellen M., and Donna Harman. “Overview of the sixth text
+retrieval conference (TREC-6).”  &lt;em&gt;Information Processing &amp;amp;
+Management&lt;/em&gt; 36.1 (2000): 3-35.&lt;/p&gt;
+
+&lt;p&gt;Blair, David C., and Melvin E. Maron. “An evaluation of retrieval
+effectiveness for a full-text document-retrieval system.”
+&lt;em&gt;Communications of the ACM&lt;/em&gt; 28.3 (1985): 289-299.&lt;/p&gt;
+
+&lt;p&gt;Latent Dirichlet allocation on Spark:\
+&lt;em&gt;http://spark.apache.org/docs/latest/mllib-clustering.html#latent-dirichlet-allocation-lda&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Wei, Xing, and W. Bruce Croft. “LDA-based document models for ad-hoc
+retrieval.” Proceedings of the 29th annual international ACM SIGIR
+conference on Research and development in information retrieval. ACM,
+2006.&lt;/p&gt;
+
+&lt;p&gt;Manning, Christopher, et al. &lt;em&gt;Introduction to Information Retrieval,
+Cambridge University Press&lt;/em&gt;. 2008.&lt;/p&gt;
+
+&lt;p&gt;Tong, Simon, and Daphne Koller. “Support vector machine active learning
+with applications to text classification.” &lt;em&gt;Journal of machine learning
+research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Singular Value Decomposition of The Ambassadors</title>
@@ -26,7 +754,7 @@
 &lt;p&gt;            Maybe because I has been buried in &lt;a href=&quot;http://www.imdb.com/title/tt4786824/&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;The Crown&lt;/em&gt;&lt;/a&gt; recent days, the rotation and scaling of Singular Value Decomposition suddenly remind me of &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;The Ambassadors&lt;/em&gt;&lt;/a&gt; by Hans Holbein, which is the most well known example of anamorphosis in painting.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/The_Ambassadors.jpg&quot; alt=&quot;The Ambassadors&quot; style=&quot;width: 1000px;&quot; /&gt;&lt;/p&gt;
-&lt;center&gt;Figure 2: The Ambassadors &lt;/center&gt;
+&lt;center&gt;Figure 1: The Ambassadors &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;            Look at the bottom center of the painting, it’s an exactly geometric transformation of a skull. And the transformation is almost the same as the smiling face in Figure 1!&lt;/p&gt;
@@ -36,6 +764,16 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;            Interestingly, there may always be different ways to explain and appreciate a theorem in math or a masterpiece of fine art.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt; I traveled to the UK in December 2016, and took the pictures below at &lt;a href=&quot;https://www.nationalgallery.org.uk/&quot;&gt;the National Gallery&lt;/a&gt;. I did have great fun there.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/ambassadors-and-hippie.jpg&quot; alt=&quot;The Ambassadors and a hippie&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;Figure 3: The Ambassadors and A Hippie &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/ambassadors-skull.jpg&quot; alt=&quot;The Skull in The Ambassadors&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;Figure 4: The Skull in The Ambassadors &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </content>
  </entry>
  
