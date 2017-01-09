@@ -4,7 +4,7 @@
  <title>Andrea Gao</title>
  <link href="http://gytcrt.github.io/gytcrt.github.io/atom.xml" rel="self"/>
  <link href="http://gytcrt.github.io/gytcrt.github.io/"/>
- <updated>2017-01-09T00:25:05-05:00</updated>
+ <updated>2017-01-09T00:28:35-05:00</updated>
  <id>http://gytcrt.github.io</id>
  <author>
    <name>Andrea Gao</name>
@@ -19,7 +19,7 @@
    <id>http://gytcrt.github.io/2017/01/08/NN-Caravaggio</id>
    <content type="html">&lt;p&gt;Artificial Intelligence technology performed an awesome show last year. Mimicking artistic style of Fine Art is surprisingly successful, which can be obviously proved by the popularity of a photo-editing application, &lt;a href=&quot;http://prisma-ai.com/&quot; target=&quot;_blank&quot;&gt;Prisma&lt;/a&gt; .&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/prisma.jpg&quot; alt=&quot;Prisma Image&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/prisma.jpg&quot; alt=&quot;Prisma Image&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 &lt;center&gt; Picture edited by Prisma&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -27,15 +27,15 @@
 
 &lt;p&gt;For example, &lt;a href=&quot;http://www.anishathalye.com/2015/12/19/an-ai-that-can-mimic-any-artist/&quot; target=&quot;_blank&quot;&gt;Anish Athalye&lt;/a&gt; used these two images to produce a new image with &lt;a href=&quot;https://afremov.com/&quot; target=&quot;_blank&quot;&gt;Leonid Afremov&lt;/a&gt;  style.&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/rain-princess.jpg&quot; alt=&quot;Rain Princess&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/rain-princess.jpg&quot; alt=&quot;Rain Princess&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 &lt;center&gt; Rain Princess by Leonid Afremov&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/dome.jpg&quot; alt=&quot;Demo&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/dome.jpg&quot; alt=&quot;Demo&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 &lt;center&gt; A photo of a dome&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/dome-afremov.png&quot; alt=&quot;Demo with Afremov&#39;s style&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/dome-afremov.png&quot; alt=&quot;Demo with Afremov&#39;s style&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 &lt;center&gt; The dome with Afremov&#39;s style&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -43,24 +43,24 @@
 
 &lt;p&gt;The original photo: my teammates and I were working for &lt;a href=&quot;http://www2.stat.duke.edu/datafest/&quot; target=&quot;_blank&quot;&gt;Datafest competition 2016&lt;/a&gt;&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/datafest.jpg&quot; alt=&quot;datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/datafest.jpg&quot; alt=&quot;datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Caravaggio’s work, which I used to learn his style from:&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/Cena_in_Emmaus.jpg&quot; alt=&quot;supper&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/Cena_in_Emmaus.jpg&quot; alt=&quot;supper&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 &lt;center&gt; The Supper at Emmaus &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/John.jpg&quot; alt=&quot;john&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/John.jpg&quot; alt=&quot;john&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 &lt;center&gt; John in the Wilderness &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/Taking_of_Christ.jpg&quot; alt=&quot;datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/Taking_of_Christ.jpg&quot; alt=&quot;datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 &lt;center&gt; The Taking of Christ &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;However, it took my mac pro about 12 hours to run 100 iterations, and I don’t think the result is similar to any Caravaggio’s work at all (&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-18-nn/neural-datafest.jpg&quot; alt=&quot;neural datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/neural-datafest.jpg&quot; alt=&quot;neural datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 
 &lt;p&gt;I think the problem is this algorithm is good at capturing styles of modern artists like Van Gogh and Claude Monet because the way they used color and brush are very characteristic. While what makes Caravaggio stand out is how he portrayed varies religious figures by realistic observation of physical and emotional human states and dramatic use of lighting. In addition, Caravaggio is also the best story teller in Fine Art history. Therefore, the styles of classical artists are harder to mimic for present AI technology because of their intricacy and delicacy.&lt;/p&gt;
 
