@@ -4,13 +4,32 @@
  <title>Andrea Gao</title>
  <link href="http://gytcrt.github.io/gytcrt.github.io/atom.xml" rel="self"/>
  <link href="http://gytcrt.github.io/gytcrt.github.io/"/>
- <updated>2017-01-09T00:28:35-05:00</updated>
+ <updated>2017-02-19T17:12:48-05:00</updated>
  <id>http://gytcrt.github.io</id>
  <author>
    <name>Andrea Gao</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Why I dislike current recommendation system</title>
+   <link href="http://gytcrt.github.io/gytcrt.github.io/2017/02/19/Recommendation-System/"/>
+   <updated>2017-02-19T00:00:00-05:00</updated>
+   <id>http://gytcrt.github.io/2017/02/19/Recommendation-System</id>
+   <content type="html">&lt;center&gt; &lt;img src=&quot;/public/img/economist-box.png&quot; style=&quot;width: 400px;&quot; /&gt; &lt;/center&gt;
+
+&lt;p&gt;When I was reading &lt;em&gt;The Economist&lt;/em&gt; today, this &lt;a href=&quot;http://www.economist.com/news/leaders/21716611-americas-bloated-pay-tv-providers-not-so-much-modern-entertainment-industry-nirvana&quot;&gt;article&lt;/a&gt; indeed caught my eyes.&lt;/p&gt;
+
+&lt;p&gt;Every night I browse the movies and series Netflix recommends to me, I think they are SOOOOO boring. I love some series made by Netflix (&lt;a href=&quot;https://www.netflix.com/title/80025678&quot;&gt;THE CROWN!&lt;/a&gt;) and admire it as a high-tech company because of the revolutionary change they brought to us . But actually, I don’t really need to know more shows similar to my previous taste since I’ve known pretty well about my own taste.&lt;/p&gt;
+
+&lt;p&gt;I still remember the days when I was in middle school and Apple Genius didn’t even exist on iTunes, I went through countless webpages of rock bands and singers to explore differences and connections between them and tried to savor new genres. This process is what I wish Netflix could help me with. Machine should help human learn.&lt;/p&gt;
+
+&lt;p&gt;However, I think current recommendation systems, no matter Netflix’s, Amazon’s or Facebook’s, cannot do that. The last American election undoubtedly verified that similar people and contents were bounded closer by recommendation systems, then generally people became more divided. So how do we define functions or features of diversity, critical thinking and open-mindedness in recommendation systems?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Economist&lt;/em&gt; said consumers are the biggest beneficiaries in this game. I would doubt it.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Can AI easily mimic Caravaggio?</title>
@@ -62,7 +81,7 @@
 
 &lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/neural-datafest.jpg&quot; alt=&quot;neural datafest&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
 
-&lt;p&gt;I think the problem is this algorithm is good at capturing styles of modern artists like Van Gogh and Claude Monet because the way they used color and brush are very characteristic. While what makes Caravaggio stand out is how he portrayed varies religious figures by realistic observation of physical and emotional human states and dramatic use of lighting. In addition, Caravaggio is also the best story teller in Fine Art history. Therefore, the styles of classical artists are harder to mimic for present AI technology because of their intricacy and delicacy.&lt;/p&gt;
+&lt;p&gt;The problem might be this algorithm is good at capturing styles of modern artists like Van Gogh and Claude Monet because the way they used color and brush are very characteristic. While what makes Caravaggio stand out is how he portrayed varies religious figures by realistic observation of physical and emotional human states and dramatic use of lighting. In addition, Caravaggio is also the best story teller in Fine Art history. Therefore, the styles of classical artists are harder to mimic for present AI technology because of their intricacy and delicacy.&lt;/p&gt;
 
 &lt;p&gt;Can AI easily easily mimic artists like Caravaggio? My answer is: we still have a long way to go.&lt;/p&gt;
 </content>
