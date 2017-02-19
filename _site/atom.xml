@@ -4,7 +4,7 @@
  <title>Andrea Gao</title>
  <link href="http://gytcrt.github.io/gytcrt.github.io/atom.xml" rel="self"/>
  <link href="http://gytcrt.github.io/gytcrt.github.io/"/>
- <updated>2017-02-19T17:12:48-05:00</updated>
+ <updated>2017-02-19T17:54:18-05:00</updated>
  <id>http://gytcrt.github.io</id>
  <author>
    <name>Andrea Gao</name>
@@ -17,13 +17,13 @@
    <link href="http://gytcrt.github.io/gytcrt.github.io/2017/02/19/Recommendation-System/"/>
    <updated>2017-02-19T00:00:00-05:00</updated>
    <id>http://gytcrt.github.io/2017/02/19/Recommendation-System</id>
-   <content type="html">&lt;center&gt; &lt;img src=&quot;/public/img/economist-box.png&quot; style=&quot;width: 400px;&quot; /&gt; &lt;/center&gt;
+   <content type="html">&lt;center&gt; &lt;img src=&quot;http://gytcrt.github.io/public/img/economist-box.png&quot; style=&quot;width: 400px;&quot; /&gt; &lt;/center&gt;
 
-&lt;p&gt;When I was reading &lt;em&gt;The Economist&lt;/em&gt; today, this &lt;a href=&quot;http://www.economist.com/news/leaders/21716611-americas-bloated-pay-tv-providers-not-so-much-modern-entertainment-industry-nirvana&quot;&gt;article&lt;/a&gt; indeed caught my eyes.&lt;/p&gt;
+&lt;p&gt;When I was reading &lt;em&gt;The Economist&lt;/em&gt; today, this &lt;a href=&quot;http://www.economist.com/news/leaders/21716611-americas-bloated-pay-tv-providers-not-so-much-modern-entertainment-industry-nirvana&quot; target=&quot;_blank&quot;&gt;article&lt;/a&gt; indeed caught my eyes.&lt;/p&gt;
 
-&lt;p&gt;Every night I browse the movies and series Netflix recommends to me, I think they are SOOOOO boring. I love some series made by Netflix (&lt;a href=&quot;https://www.netflix.com/title/80025678&quot;&gt;THE CROWN!&lt;/a&gt;) and admire it as a high-tech company because of the revolutionary change they brought to us . But actually, I don’t really need to know more shows similar to my previous taste since I’ve known pretty well about my own taste.&lt;/p&gt;
+&lt;p&gt;Every night I browse the movies and series Netflix recommends to me, I think they are &lt;strong&gt;SOOOOO&lt;/strong&gt; boring. I love some series made by Netflix (&lt;a href=&quot;https://www.netflix.com/title/80025678&quot; target=&quot;_blank&quot;&gt;THE CROWN!&lt;/a&gt;) and admire it as a high-tech company because of the revolutionary change they brought to us . But actually, I don’t really need to know more shows similar to my previous taste since I’ve known pretty well about my own taste.&lt;/p&gt;
 
-&lt;p&gt;I still remember the days when I was in middle school and Apple Genius didn’t even exist on iTunes, I went through countless webpages of rock bands and singers to explore differences and connections between them and tried to savor new genres. This process is what I wish Netflix could help me with. Machine should help human learn.&lt;/p&gt;
+&lt;p&gt;I still remember the days when I was in middle school and Apple Genius didn’t even exist on iTunes, I went through countless webpages of rock bands and singers to explore differences and connections between them and tried to savor new genres. This process is what I wish Netflix could help me with. &lt;strong&gt;Machine should help human learn&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;However, I think current recommendation systems, no matter Netflix’s, Amazon’s or Facebook’s, cannot do that. The last American election undoubtedly verified that similar people and contents were bounded closer by recommendation systems, then generally people became more divided. So how do we define functions or features of diversity, critical thinking and open-mindedness in recommendation systems?&lt;/p&gt;
 
