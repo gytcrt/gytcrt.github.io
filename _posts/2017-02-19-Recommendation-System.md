@@ -4,7 +4,7 @@ title: Why I dislike current recommendation system
 tags: [Blog]
 ---
 
-<center> <img src="/public/img/economist-box.png" style="width: 400px;"/> </center>
+<center> <img src="gytcrt.github.io/public/img/economist-box.png" style="width: 400px;"/> </center>
 
 When I was reading *The Economist* today, this [article](http://www.economist.com/news/leaders/21716611-americas-bloated-pay-tv-providers-not-so-much-modern-entertainment-industry-nirvana) indeed caught my eyes.
 
