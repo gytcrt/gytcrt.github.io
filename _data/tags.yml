@@ -24,3 +24,7 @@ Blog:
   color: '#949667'
   description: >
     My thoughts
+
+Resume:
+  name: Resume
+  image: /gytcrt.github.io/public/img/NYer.JPG 

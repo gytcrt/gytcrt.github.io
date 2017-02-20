@@ -18,7 +18,7 @@ description:      >
 
 
 # The tags listed as entries in the sidebar
-sidebar_tags:     [Blog , Project]
+sidebar_tags:     [Blog , Project, Resume]
 
 # Fallback image and color if not overwritten for tag or post
 image:            /gytcrt.github.io/public/img/John.jpg
