@@ -2,9 +2,7 @@
 tag: Resume
 layout: resume
 permalink: /tag/Resume/
-
 ---
-
 
 Education
 ---------

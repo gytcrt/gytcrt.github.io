@@ -15,7 +15,7 @@ title: About Me
 
 {{ site.author.about }}
 
-I am enthusiastic about the application of Bayesian Statistics, Predictive Modeling, Machine Learning, and Natural Language Processing in different fields.
+I am enthusiastic about application of Bayesian Statistics, Predictive Modeling, Machine Learning, and Natural Language Processing in different fields.
 
 The appreciation of art, fashion, literature, and different cultures governs my life. And I enjoy jogging, cycling and traveling a lot.
 
