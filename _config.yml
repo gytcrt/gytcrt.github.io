@@ -2,10 +2,10 @@
 permalink:        pretty
 
 # Setup
-url:              
+url:              http://gytcrt.github.io
 
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
-baseurl:          /gytcrt.github.io
+baseurl:          ’’
 
 title:            Andrea Gao
 
