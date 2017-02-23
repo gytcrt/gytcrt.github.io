@@ -2,7 +2,7 @@
 permalink:        pretty
 
 # Setup
-url:              gytcrt.github.io
+url:              http://gytcrt.github.io
 
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:          ’’
