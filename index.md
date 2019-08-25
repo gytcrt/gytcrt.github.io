@@ -15,18 +15,24 @@ title: About Me
 
 {{ site.author.about }}
 
-I am enthusiastic about the application of Bayesian Statistics, Predictive Modeling, Machine Learning, and Natural Language Processing in different fields.
+I grew up in Chongqing, China. Guangzhou, Shenzhen, California, North Carolina, Mexico City are the places I’ve lived in for more than 3 months. Currently, I try to stay in NYC for most of my weekends.
 
-The appreciation of art, fashion, literature, and different cultures governs my life. And I enjoy jogging, cycling and traveling a lot.
+I am
 
-I am looking for more experiences and adventures.
+* a developer/data scientist/consultant at Boston Consulting Group
+* an advocate of women’s right and LGBT rights
+* a Chinese calligrapher and art lover
+
+
+I create this blog to share and connect:) Hopefully, you will be somewhat inspired or find a way to debug your code here.
+
 
 ***
 
 # Contact
 
-* Hit me up at the bottom left corner of this page.
-* Shoot me an email at yg77@duke.edu.
+* Hit me up at the bottom left corner of this page
+* Shoot me an email at gaoandrea7@gmail.com
 
 ***
 
