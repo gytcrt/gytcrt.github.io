@@ -19,9 +19,10 @@ I grew up in Chongqing, China. Guangzhou, Shenzhen, California, North Carolina, 
 
 I am
 
+* a developer/data scientist/consultant at Boston Consulting Group
+* an advocate of women’s right and LGBT rights
 * a Chinese calligrapher and art lover
 * an advocate of women’s right and LGBT rights
-* a developer/data scientist/consultant at Boston Consulting Group
 
 
 
