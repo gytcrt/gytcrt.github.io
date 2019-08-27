@@ -22,7 +22,6 @@ I am
 * a developer/data scientist/consultant at Boston Consulting Group
 * an advocate of women’s right and LGBT rights
 * a Chinese calligrapher and art lover
-* an advocate of women’s right and LGBT rights
 
 
 
