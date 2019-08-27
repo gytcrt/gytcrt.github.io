@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/gytcrt.github.io/public/css/jekyll-github.css">
   <link rel="stylesheet" href="/gytcrt.github.io/font-awesome/css/font-awesome.min.css">
 
-  <link rel="canonical" href="http://gytcrt.github.io/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/" />
+  <link rel="canonical" href="http://localhost:4000/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/" />
 
   
 
@@ -42,7 +42,7 @@
   <link rel="shortcut icon" href="/gytcrt.github.io/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="Andrea Gao" href="http://gytcrt.github.io/gytcrt.github.io/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Andrea Gao" href="http://localhost:4000/gytcrt.github.io/atom.xml">
 </head>
 
 
@@ -56,7 +56,7 @@
 <article class="post">
   <h1 class="post-title">Shiny&#58 easily passing a long list of items to selectInput choices</h1>
   <div class="post-date">
-    <time datetime="2016-08-11T00:00:00-04:00">08/11/16</time>
+    <time datetime="2016-08-11T00:00:00-05:00">08/11/16</time>
     <span>on <a href="/gytcrt.github.io/tag/Blog/">Blog</a></span>
   </div>
   
@@ -65,29 +65,27 @@
 
 <p>Are we gonna list all the items one by one?</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">selectInput</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span> <span class="s2">"Countries:"</span><span class="p">,</span>
-            <span class="n">c</span><span class="p">(</span><span class="s2">"Afghanistan"</span> <span class="o">=</span> <span class="s2">"AF"</span><span class="p">,</span>
-              <span class="s2">"Albania"</span> <span class="o">=</span> <span class="s2">"AL"</span><span class="p">,</span>
-              <span class="s2">"Algeria"</span> <span class="o">=</span> <span class="s2">"DZ"</span><span class="p">))</span>
-</code></pre>
-</div>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">selectInput</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Countries:"</span><span class="p">,</span><span class="w">
+            </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Afghanistan"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"AF"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"Albania"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"AL"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"Algeria"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"DZ"</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
 <p>NO WAY:)</p>
 
 <p>            Here we’d better read the countries and their abbreviations as a data frame and pass them to selectInput choices as a list.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1"># Read the countries and their abbreviation as data frame
-</span><span class="n">countries.list</span> <span class="o">&lt;-</span> <span class="n">read.table</span><span class="p">(</span><span class="s2">"countries.txt"</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">"|"</span><span class="p">,</span>
-                             <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">quote</span> <span class="o">=</span> <span class="s2">""</span><span class="p">,</span>
-                             <span class="n">col.names</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"abbr"</span><span class="p">,</span> <span class="s2">"country"</span><span class="p">))</span>
-<span class="c1"># Make the data frame as a list
-</span><span class="n">choice.country</span> <span class="o">&lt;-</span> <span class="n">as.list</span><span class="p">(</span><span class="n">countries.list</span><span class="o">$</span><span class="n">abbr</span><span class="p">)</span>
-<span class="n">names</span><span class="p">(</span><span class="n">choice.country</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">countries.list</span><span class="o">$</span><span class="n">country</span>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Read the countries and their abbreviation as data frame</span><span class="w">
+</span><span class="n">countries.list</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.table</span><span class="p">(</span><span class="s2">"countries.txt"</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"|"</span><span class="p">,</span><span class="w">
+                             </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">quote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+                             </span><span class="n">col.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"abbr"</span><span class="p">,</span><span class="w"> </span><span class="s2">"country"</span><span class="p">))</span><span class="w">
+</span><span class="c1"># Make the data frame as a list</span><span class="w">
+</span><span class="n">choice.country</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.list</span><span class="p">(</span><span class="n">countries.list</span><span class="o">$</span><span class="n">abbr</span><span class="p">)</span><span class="w">
+</span><span class="nf">names</span><span class="p">(</span><span class="n">choice.country</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">countries.list</span><span class="o">$</span><span class="n">country</span><span class="w">
 
-<span class="c1"># Pass the list to selectInput choices
-</span><span class="n">selectInput</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span> <span class="s2">"Countries:"</span><span class="p">,</span>
-            <span class="n">choices</span><span class="o">=</span><span class="n">choice.country</span><span class="p">)</span>
-</code></pre>
-</div>
+</span><span class="c1"># Pass the list to selectInput choices</span><span class="w">
+</span><span class="n">selectInput</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Countries:"</span><span class="p">,</span><span class="w">
+            </span><span class="n">choices</span><span class="o">=</span><span class="n">choice.country</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
 
 <p>            It’s more decent!</p>
 
@@ -164,7 +162,7 @@
 
   <script>
     var disqus_config = function () {
-      this.page.url = 'http://gytcrt.github.io/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/';
+      this.page.url = 'http://localhost:4000/gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/';
       this.page.identifier = '/2016/08/11/RShiny:-easily-passing-a-long-list-of-items-to-selectInput-choices';
     };
 

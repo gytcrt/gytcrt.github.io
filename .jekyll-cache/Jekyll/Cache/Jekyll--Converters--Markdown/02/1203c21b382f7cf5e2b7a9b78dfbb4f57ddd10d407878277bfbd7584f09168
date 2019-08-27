@@ -1,0 +1,30 @@
+I"$	<p>            I was reading a note of computation of <a href="https://en.wikipedia.org/wiki/Tikhonov_regularization" target="_blank">Ridge Regression</a> in the afternoon, I noticed a super cute illustration of Singular Value Decomposition(SVD) drawn by Prof. Cynthia Rudin.</p>
+
+<p><img src="http://gytcrt.github.io/public/img/SVD.png" alt="Singular Value Decomposition" style="width: 1000px;" /></p>
+<center>Figure 1: Illustration of Singular Value Decomposition in Ridge Regression </center>
+<p><br /></p>
+
+<p>            Maybe because I has been buried in <a href="http://www.imdb.com/title/tt4786824/" target="_blank"><em>The Crown</em></a> recent days, the rotation and scaling of Singular Value Decomposition suddenly remind me of <a href="https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)" target="_blank"><em>The Ambassadors</em></a> by Hans Holbein, which is the most well known example of anamorphosis in painting.</p>
+
+<p><img src="http://gytcrt.github.io/public/img/The_Ambassadors.jpg" alt="The Ambassadors" style="width: 1000px;" /></p>
+<center>Figure 1: The Ambassadors </center>
+<p><br /></p>
+
+<p>            Look at the bottom center of the painting, it’s an exactly geometric transformation of a skull. And the transformation is almost the same as the smiling face in Figure 1!</p>
+
+<center><img src="http://gytcrt.github.io/public/img/Holbein_Skull.jpg" alt="The transformed skull" style="width: 300px;" /></center>
+<center>Figure 2: The Transformed Skull </center>
+<p><br /></p>
+
+<p>            Interestingly, there may always be different ways to explain and appreciate a theorem in math or a masterpiece of fine art.</p>
+
+<p><strong>P.S.</strong> I traveled to the UK in December 2016, and took the pictures below at <a href="https://www.nationalgallery.org.uk/">the National Gallery</a>. I did have great fun there.</p>
+
+<center><img src="http://gytcrt.github.io/public/img/ambassadors-and-hippie.jpg" alt="The Ambassadors and a hippie" style="width: 500px;" /></center>
+<center>Figure 3: The Ambassadors and A Hippie </center>
+<p><br /></p>
+
+<center><img src="http://gytcrt.github.io/public/img/ambassadors-skull.jpg" alt="The Skull in The Ambassadors" style="width: 500px;" /></center>
+<center>Figure 4: The Skull in The Ambassadors </center>
+<p><br /></p>
+:ET
