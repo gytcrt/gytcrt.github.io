@@ -5,7 +5,7 @@ permalink: /tag/Resume/
 
 ---
 
-Experience
+Life after school
 ----------
 2018 - present
 : **Data Scientist/Engineer/Consultant** Boston Consulting Group; you might find me everywhere on earth
