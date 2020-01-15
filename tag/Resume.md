@@ -5,6 +5,7 @@ permalink: /tag/Resume/
 
 ---
 
+
 Life after school
 ----------
 2018 - present
