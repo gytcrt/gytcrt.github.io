@@ -56,7 +56,7 @@
 <article class="post">
   <h1 class="post-title">Example content</h1>
   <div class="post-date">
-    <time datetime="2012-02-07T00:00:00-05:00">02/07/12</time>
+    <time datetime="2012-02-07T00:00:00+08:00">02/07/12</time>
     <span></span>
   </div>
   
@@ -79,12 +79,12 @@
 <p><abbr title="HyperText Markup Language">HTML</abbr> defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
 
 <ul>
-  <li><strong>To bold text</strong>, use <code class="highlighter-rouge">**To bold text**</code>.</li>
-  <li><em>To italicize text</em>, use <code class="highlighter-rouge">*To italicize text*</code>.</li>
-  <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should be defined like this <code class="highlighter-rouge">*[HTML]: HyperText Markup Language</code>.</li>
-  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="highlighter-rouge">&lt;cite&gt;</code>.</li>
-  <li>~~Deleted~~ text should use <code class="highlighter-rouge">~~deleted~~</code> and <ins>inserted</ins> text should use <code class="highlighter-rouge">&lt;ins&gt;</code>.</li>
-  <li>Superscript <sup>text</sup> uses <code class="highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="highlighter-rouge">&lt;sub&gt;</code><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</li>
+  <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">**To bold text**</code>.</li>
+  <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">*To italicize text*</code>.</li>
+  <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should be defined like this <code class="language-plaintext highlighter-rouge">*[HTML]: HyperText Markup Language</code>.</li>
+  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+  <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">~~deleted~~</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+  <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</li>
 </ul>
 
 <p>Most of these elements are styled by browsers with few modifications on our part.</p>
@@ -95,30 +95,27 @@
 
 <h3 id="code">Code</h3>
 
-<p>Cum sociis natoque penatibus et magnis dis <code class="highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
+<p>Cum sociis natoque penatibus et magnis dis <code class="language-plaintext highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Example can be run directly in your JavaScript console</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example can be run directly in your JavaScript console</span>
 
 <span class="c1">// Create a function that takes two arguments and returns the sum of those</span>
 <span class="c1">// arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"return a + b"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
 
 <span class="c1">// Call the function</span>
 <span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
 <span class="c1">// &gt; 8</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="math">Math</h3>
 
-<p>Aenean lacinia <span class="MathJax_Preview">f(x) = x^2</span><script type="math/tex">f(x) = x^2</script> bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+<p>Aenean lacinia \(f(x) = x^2\) bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
 
-<div class="MathJax_Preview">\phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) =
-  \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) =</div>
-<script type="math/tex; mode=display">\phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) =
-  \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) =</script>
+\[\phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) =
+  \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) =\]
 
-<div class="MathJax_Preview">(x_1, \ldots, x_n) \left( \begin{array}{ccc}
+\[(x_1, \ldots, x_n) \left( \begin{array}{ccc}
       \phi(e_1, e_1) &amp; \cdots &amp; \phi(e_1, e_n) \\
       \vdots &amp; \ddots &amp; \vdots \\
       \phi(e_n, e_1) &amp; \cdots &amp; \phi(e_n, e_n)
@@ -127,18 +124,7 @@
       y_1 \\
       \vdots \\
       y_n
-    \end{array} \right)</div>
-<script type="math/tex; mode=display">% <![CDATA[
-(x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right) %]]></script>
+    \end{array} \right)\]
 
 <h3 id="lists">Lists</h3>
 
@@ -225,10 +211,10 @@
 
 <!-- ## Footnotes -->
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>You can insert footnote marks using <code class="highlighter-rouge">[^1]</code>, <code class="highlighter-rouge">[^2]</code>, etc and write the footnote text at the bottom of your file like this: <code class="highlighter-rouge">[^1]: You can also insert footnote marks...</code> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>You can insert footnote marks using <code class="language-plaintext highlighter-rouge">[^1]</code>, <code class="language-plaintext highlighter-rouge">[^2]</code>, etc and write the footnote text at the bottom of your file like this: <code class="language-plaintext highlighter-rouge">[^1]: You can also insert footnote marks...</code> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

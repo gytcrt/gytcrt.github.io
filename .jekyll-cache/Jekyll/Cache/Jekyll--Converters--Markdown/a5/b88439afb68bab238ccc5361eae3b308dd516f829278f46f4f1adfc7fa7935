@@ -1,4 +1,4 @@
-I"Ë<<p>Topic models like Latent Dirichlet Allocation have been widely applied
+I"Þ<<p>Topic models like Latent Dirichlet Allocation have been widely applied
 to different fields. However, even text retrieval is naturally related
 to latent topics of a corpus, the application of the LDA model in this
 field is still novel. In this paper, I try to study how to use the LDA
@@ -237,7 +237,7 @@ average precision is 0.4144. recalls are around 0.4 to 0.5. With regard
 to recall, the average recalls basically range from 0.4 to 0.5, and the
 best average recall is 0.5337.\</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>            precision   recall   ----------- ----------- --------
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>            precision   recall   ----------- ----------- --------
 query 434      0.4144   0.3335
 query 401      0.3209   0.5244
 query 450      0.3597   0.4155

@@ -56,7 +56,7 @@
 <article class="post">
   <h1 class="post-title">Text Retrieval Based on the LDA Model</h1>
   <div class="post-date">
-    <time datetime="2016-12-09T00:00:00-05:00">12/09/16</time>
+    <time datetime="2016-12-09T00:00:00+08:00">12/09/16</time>
     <span></span>
   </div>
   
@@ -68,8 +68,8 @@ field is still novel. In this paper, I try to study how to use the LDA
 model to retrieve relevant documents for a given query. I propose a text
 retrieval system based on the LDA model, and test the accuracy and
 efficiency of the system on TREC Ad Hoc 8 collection. The experiment
-shows that text retrieval based on the LDA model is helpful and doable.\
-\
+shows that text retrieval based on the LDA model is helpful and doable.<br />
+<br />
 <em>Keywords:</em> latent dirichlet allocation, text retrieval, topic modeling</p>
 
 <h1 id="introduction">Introduction</h1>
@@ -81,8 +81,8 @@ engines. In previous researches, documents are typically represented by
 the “bag-of-words” model, which assumes the order of every word in a
 document is exchangeable. This model enables researchers to reduce each
 document to a vector of counts of words, and process a corpus as a large
-sparse matrix[@lda].\
-\
+sparse matrix[@lda].<br />
+<br />
 Modeling large corpus has been studied since the introduction of
 <em>tf-idf</em> scheme [@tfidf]. After that, information retrieval (IR)
 researchers have proposed several notable techniques like Latent
@@ -95,8 +95,8 @@ it assumes the topic has a Dirichlet prior distribution. Thus topics
 inferred by LDA are more interpretable than pLSI. Since the LDA model is
 highly extendable, many LDA-based models such as <em>supervised topic
 modeling</em>[@slda] and <em>correlated topic models</em>[@ctm] have been proposed
-to the present.\
-\
+to the present.<br />
+<br />
 The LDA model has been cited and applied extendedly in text-based fields
 including bioinformatics, document clustering, web mining and spam
 detection. However, application of LDA in IR field is still novel.
@@ -172,16 +172,16 @@ original LDA model.</p>
 <p>While LDA has been utilized and extended to different fields, its
 application in text retrieval is still novel. The Text REtrieval
 Conference (TREC) provides large test collections to promote progress on
-text retrieval[@trec].\
-\
+text retrieval[@trec].<br />
+<br />
 The Text REtrieval Conference is co-sponsored by the National Institute
 of Standards and Technology (NIST) and the U.S. Department of Defense,
 and was started in 1992. The basic goal of TREC is to help researchers
 develop better text retrieval systems and encourage communication among
 text retrieval researchers [4]. During the last 25 years, the number
 of participants has increased, and the retrieval tasks and data
-collection have been optimized.\
-\
+collection have been optimized.<br />
+<br />
 Every TREC conference has two tasks: the routing task and the ad hoc
 task. The ad hoc task provides roughly 2 Gigabytes of documents, 50 new
 topics (queries) and relevant judgments that either are relevant or not
@@ -217,8 +217,8 @@ matching results according to relevance. This section mainly illustrates
 how to retrieve documents relevant to a given query. To simplify the
 retrieval process, I assume given a query I would know several relevent
 and non-relevent documents before I retrieve more documents from the
-whole corpus.\
-\
+whole corpus.<br />
+<br />
 To effectively apply topic modeling to corpus, the first step is to
 clean corpus and represent documents by vector of words. Naturally,
 there are punctuations, capitalized letters, numbers, and commons words
@@ -230,8 +230,8 @@ meaning, and treating them as a single token <em>math</em> would be more
 informative and useful in topic modeling. <em>Stemming</em> process reduces
 words to their root. Moreover, using n-gram model on corpus would
 increase accuracy of topic modeling because n-gram is more likely to
-capture more topic-related phrases than single word.\
-\
+capture more topic-related phrases than single word.<br />
+<br />
 The process of retrieve relevant documents is as follows:</p>
 
 <ul>
@@ -266,8 +266,8 @@ less time consuming than the whole TREC Ad Hoc 8 collection. The whole
 corpus, queries and relevent judgements are same as participants used in
 TREC. Therefore, I can easily extend the experiment on the whole TREC Ad
 Hoc 8 collection, and compare the result with other participants’ in the
-next step.\
-\
+next step.<br />
+<br />
 Since relevent judgment for each query-document pair is available, each
 time I tried to experiment on a query, I randomly split the relevent
 documents into training set and test set, and training set accounts 10%
@@ -281,8 +281,8 @@ experiment, the <em>correlated topic model</em> (CTM) generally preformed
 better than the original LDA model, because the query usually contains
 several related topics, and CTM is capable of capturing correlated
 latent topics. Tuning the number of latent topics by cross validation, I
-found setting $k=30$ would be the best choice here.\
-\
+found setting $k=30$ would be the best choice here.<br />
+<br />
 CTM model returned the topic distribution for each document in the
 corpus. Given the training set, I could measure which document in the
 rest documents is similar to the training set, which means the document
@@ -300,7 +300,7 @@ average precision is 0.4144. recalls are around 0.4 to 0.5. With regard
 to recall, the average recalls basically range from 0.4 to 0.5, and the
 best average recall is 0.5337.\</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>            precision   recall   ----------- ----------- --------
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>            precision   recall   ----------- ----------- --------
 query 434      0.4144   0.3335
 query 401      0.3209   0.5244
 query 450      0.3597   0.4155
@@ -311,8 +311,7 @@ query 438      0.2985   0.5091
 query 424      0.3562   0.5300
 query 425      0.3814   0.4824
 query 446      0.3307   0.5120
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>: Average Precision and Recall rate of the 10 queries</p>
 
@@ -338,8 +337,8 @@ relevent documents given the query, and tried to find other relevent
 documents based on the known relevent documents. In real text retrieval
 system, given a new query, I might not know any relevent document.
 Identifying the most relevent documents would be the first problem for
-this test retrieval system.\
-\
+this test retrieval system.<br />
+<br />
 For future work, I would enlarge the size of corpus in my retrieval
 experiment; meanwhile, expedite bigramming and LDA fitting process by
 using Spark[@ldaspark] on cloud. In addition, query likelihood
@@ -369,7 +368,7 @@ Management</em> 36.1 (2000): 3-35.</p>
 effectiveness for a full-text document-retrieval system.”
 <em>Communications of the ACM</em> 28.3 (1985): 289-299.</p>
 
-<p>Latent Dirichlet allocation on Spark:\
+<p>Latent Dirichlet allocation on Spark:<br />
 <em>http://spark.apache.org/docs/latest/mllib-clustering.html#latent-dirichlet-allocation-lda</em></p>
 
 <p>Wei, Xing, and W. Bruce Croft. “LDA-based document models for ad-hoc

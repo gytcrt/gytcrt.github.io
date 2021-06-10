@@ -56,7 +56,7 @@
 <article class="post">
   <h1 class="post-title">Introducing Hydejack</h1>
   <div class="post-date">
-    <time datetime="2016-03-08T00:00:00-05:00">03/08/16</time>
+    <time datetime="2016-03-08T00:00:00+08:00">03/08/16</time>
     <span></span>
   </div>
   
@@ -73,7 +73,7 @@
   }
 </style>
 
-<p>Hydejack is a pretentious two-column <a href="http://jekyllrb.com">Jekyll</a> theme, stolen by <a href="https://twitter.com/qwtel"><code class="highlighter-rouge">@qwtel</code></a> from <a href="http://hyde.getpoole.com">Hyde</a>. You could say it was.. <a href="http://media3.giphy.com/media/makedRIckZBW8/giphy.gif">hydejacked</a>.</p>
+<p>Hydejack is a pretentious two-column <a href="http://jekyllrb.com">Jekyll</a> theme, stolen by <a href="https://twitter.com/qwtel"><code class="language-plaintext highlighter-rouge">@qwtel</code></a> from <a href="http://hyde.getpoole.com">Hyde</a>. You could say it was.. <a href="http://media3.giphy.com/media/makedRIckZBW8/giphy.gif">hydejacked</a>.</p>
 
 <h2 id="features">Features</h2>
 <p>Unlike Hyde, it’s opinionated about how you are going to use it (as a blog!)
@@ -109,7 +109,7 @@ Since the sidebar moves to the top, the user has to scroll just to read the titl
 <h2 id="manual">Manual</h2>
 
 <h3 id="configuration">Configuration</h3>
-<p>You can configure important aspects of the theme via <a href="https://github.com/qwtel/hydejack/blob/master/_config.yml"><code class="highlighter-rouge">_config.yml</code></a>. This includes:</p>
+<p>You can configure important aspects of the theme via <a href="https://github.com/qwtel/hydejack/blob/master/_config.yml"><code class="language-plaintext highlighter-rouge">_config.yml</code></a>. This includes:</p>
 
 <ul>
   <li>the blog description in the sidebar</li>
@@ -119,14 +119,13 @@ Since the sidebar moves to the top, the user has to scroll just to read the titl
 </ul>
 
 <h3 id="how-to-change-the-image-and-color-of-a-post">How to Change the Image and Color of a Post</h3>
-<p>In the manifest of a blog post, simply add an url as <code class="highlighter-rouge">image</code> and a CSS color as <code class="highlighter-rouge">color</code>:</p>
+<p>In the manifest of a blog post, simply add an url as <code class="language-plaintext highlighter-rouge">image</code> and a CSS color as <code class="language-plaintext highlighter-rouge">color</code>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="s">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="s">title</span><span class="pi">:</span> <span class="s">Introducing Hydejack</span>
-<span class="s">image</span><span class="pi">:</span> <span class="s">http://qwtel.com/hydejack/public/img/hyde.jpg</span>
-<span class="s">color</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#949667'</span>
-</code></pre>
-</div>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Introducing Hydejack</span>
+<span class="na">image</span><span class="pi">:</span> <span class="s">http://qwtel.com/hydejack/public/img/hyde.jpg</span>
+<span class="na">color</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#949667'</span>
+</code></pre></div></div>
 
 <h3 id="how-to-add-a-new-tag">How to Add a New Tag</h3>
 
@@ -134,42 +133,38 @@ Since the sidebar moves to the top, the user has to scroll just to read the titl
 
 <ol>
   <li>
-    <p>Add an entry to <code class="highlighter-rouge">_data/tags.yml</code>, where the key represents a slug and provide at least a <code class="highlighter-rouge">name</code> value and optionally <code class="highlighter-rouge">image</code>, <code class="highlighter-rouge">color</code> and <code class="highlighter-rouge">description</code>.</p>
+    <p>Add an entry to <code class="language-plaintext highlighter-rouge">_data/tags.yml</code>, where the key represents a slug and provide at least a <code class="language-plaintext highlighter-rouge">name</code> value and optionally <code class="language-plaintext highlighter-rouge">image</code>, <code class="language-plaintext highlighter-rouge">color</code> and <code class="language-plaintext highlighter-rouge">description</code>.</p>
 
-    <p>Example <code class="highlighter-rouge">/_data/tags.yml</code>:</p>
+    <p>Example <code class="language-plaintext highlighter-rouge">/_data/tags.yml</code>:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code><span class="s">mytag</span><span class="pi">:</span>
-  <span class="s">name</span><span class="pi">:</span> <span class="s">My Tag</span>
-</code></pre>
-    </div>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">mytag</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">My Tag</span>
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>Make a new file in the <code class="highlighter-rouge">tag</code> folder, using the same name you’ve used as the key / slug and change the <code class="highlighter-rouge">tag</code> and <code class="highlighter-rouge">permalink</code> entries.</p>
+    <p>Make a new file in the <code class="language-plaintext highlighter-rouge">tag</code> folder, using the same name you’ve used as the key / slug and change the <code class="language-plaintext highlighter-rouge">tag</code> and <code class="language-plaintext highlighter-rouge">permalink</code> entries.</p>
 
-    <p>Example <code class="highlighter-rouge">/tag/mytag.md</code>:</p>
+    <p>Example <code class="language-plaintext highlighter-rouge">/tag/mytag.md</code>:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code><span class="s">layout</span><span class="pi">:</span> <span class="s">blog_by_tag</span>
-<span class="s">tag</span><span class="pi">:</span> <span class="s">mytag</span>
-<span class="s">permalink</span><span class="pi">:</span> <span class="s">/tag/mytag/</span>
-</code></pre>
-    </div>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s">blog_by_tag</span>
+<span class="na">tag</span><span class="pi">:</span> <span class="s">mytag</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/tag/mytag/</span>
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>Tag your blog posts using the <code class="highlighter-rouge">tags</code> key (color and image will only depend on the first tag).</p>
+    <p>Tag your blog posts using the <code class="language-plaintext highlighter-rouge">tags</code> key (color and image will only depend on the first tag).</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code><span class="s">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="s">title</span><span class="pi">:</span> <span class="s">Introducing My New Tag</span>
-<span class="s">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">mytag</span><span class="pi">,</span> <span class="nv">othertag</span><span class="pi">]</span>
-</code></pre>
-    </div>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Introducing My New Tag</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">mytag</span><span class="pi">,</span> <span class="nv">othertag</span><span class="pi">]</span>
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>(optional) Add the tag to the sidebar, by adding it to <code class="highlighter-rouge">sidebar_tags</code> in <code class="highlighter-rouge">_config.yml</code>.
+    <p>(optional) Add the tag to the sidebar, by adding it to <code class="language-plaintext highlighter-rouge">sidebar_tags</code> in <code class="language-plaintext highlighter-rouge">_config.yml</code>.
 They will appear in the listed order.</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code><span class="s">sidebar_tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">mytag</span><span class="pi">,</span> <span class="nv">othertag</span><span class="pi">]</span>
-</code></pre>
-    </div>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">sidebar_tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">mytag</span><span class="pi">,</span> <span class="nv">othertag</span><span class="pi">]</span>
+</code></pre></div>    </div>
   </li>
 </ol>
 
