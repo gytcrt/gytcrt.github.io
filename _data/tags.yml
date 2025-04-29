@@ -13,18 +13,18 @@
 
 Project:
   name: Project
-  image: /gytcrt.github.io/public/img/Project.jpg
+  image: /public/img/Project.jpg
   color: '#949667'
   description: >
     Things I am working on
 
 Blog:
   name: Blog
-  image: /gytcrt.github.io/public/img/Blog.jpg
+  image: /public/img/Blog.jpg
   color: '#949667'
   description: >
     My thoughts
 
 Resume:
   name: Resume
-  image: /gytcrt.github.io/public/img/london.jpeg 
+  image: /public/img/london.jpeg 

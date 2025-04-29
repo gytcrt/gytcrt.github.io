@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Andrea Gao</title>
- <link href="http://gytcrt.github.io/atom.xml" rel="self"/>
- <link href="http://gytcrt.github.io/"/>
- <updated>2021-06-10T22:09:35+08:00</updated>
- <id>http://gytcrt.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2025-04-29T15:24:33-04:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Andrea Gao</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Why I dislike current recommendation system</title>
-   <link href="http://gytcrt.github.io/2017/02/19/Recommendation-System/"/>
-   <updated>2017-02-19T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2017/02/19/Recommendation-System</id>
+   <link href="http://localhost:4000/2017/02/19/Recommendation-System/"/>
+   <updated>2017-02-19T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2017/02/19/Recommendation-System</id>
    <content type="html">&lt;center&gt; &lt;img src=&quot;http://gytcrt.github.io/public/img/economist-box.png&quot; style=&quot;width: 400px;&quot; /&gt; &lt;/center&gt;
 
 &lt;p&gt;When I was reading &lt;em&gt;The Economist&lt;/em&gt; today, this &lt;a href=&quot;http://www.economist.com/news/leaders/21716611-americas-bloated-pay-tv-providers-not-so-much-modern-entertainment-industry-nirvana&quot; target=&quot;_blank&quot;&gt;article&lt;/a&gt; indeed caught my eyes.&lt;/p&gt;
@@ -33,9 +33,9 @@
  
  <entry>
    <title>Can AI easily mimic Caravaggio?</title>
-   <link href="http://gytcrt.github.io/2017/01/08/NN-Caravaggio/"/>
-   <updated>2017-01-08T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2017/01/08/NN-Caravaggio</id>
+   <link href="http://localhost:4000/2017/01/08/NN-Caravaggio/"/>
+   <updated>2017-01-08T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2017/01/08/NN-Caravaggio</id>
    <content type="html">&lt;p&gt;Artificial Intelligence technology performed an awesome show last year. Mimicking artistic style of Fine Art is surprisingly successful, which can be obviously proved by the popularity of a photo-editing application, &lt;a href=&quot;http://prisma-ai.com/&quot; target=&quot;_blank&quot;&gt;Prisma&lt;/a&gt; .&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/prisma.jpg&quot; alt=&quot;Prisma Image&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
@@ -54,8 +54,8 @@
 &lt;center&gt; A photo of a dome&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/dome-afremov.png&quot; alt=&quot;Demo with Afremov's style&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
-&lt;center&gt; The dome with Afremov's style&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/01-08-nn/dome-afremov.png&quot; alt=&quot;Demo with Afremov&apos;s style&quot; style=&quot;width: 500px;&quot; /&gt;&lt;/center&gt;
+&lt;center&gt; The dome with Afremov&apos;s style&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Given the open-source implementation and the amazing result, I was definitely eager to mimic more masterpieces. Therefore, I installed &lt;a href=&quot;https://github.com/anishathalye/neural-style&quot; target=&quot;_blank&quot;&gt;neural style&lt;/a&gt; , and tried to combine my picture with &lt;a href=&quot;https://en.wikipedia.org/wiki/Caravaggio&quot; target=&quot;_blank&quot;&gt;Caravaggio&lt;/a&gt; ’s style.&lt;/p&gt;
@@ -89,9 +89,9 @@
  
  <entry>
    <title>Text Retrieval Based on the LDA Model</title>
-   <link href="http://gytcrt.github.io/2016/12/09/Text-Retrieval-Based-on-the-LDA-Model/"/>
-   <updated>2016-12-09T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/12/09/Text-Retrieval-Based-on-the-LDA-Model</id>
+   <link href="http://localhost:4000/2016/12/09/Text-Retrieval-Based-on-the-LDA-Model/"/>
+   <updated>2016-12-09T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2016/12/09/Text-Retrieval-Based-on-the-LDA-Model</id>
    <content type="html">&lt;p&gt;Topic models like Latent Dirichlet Allocation have been widely applied
 to different fields. However, even text retrieval is naturally related
 to latent topics of a corpus, the application of the LDA model in this
@@ -418,9 +418,9 @@ research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
  
  <entry>
    <title>Singular Value Decomposition of The Ambassadors</title>
-   <link href="http://gytcrt.github.io/2016/11/07/SVM-Ambassadors/"/>
-   <updated>2016-11-07T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/11/07/SVM-Ambassadors</id>
+   <link href="http://localhost:4000/2016/11/07/SVM-Ambassadors/"/>
+   <updated>2016-11-07T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2016/11/07/SVM-Ambassadors</id>
    <content type="html">&lt;p&gt;            I was reading a note of computation of &lt;a href=&quot;https://en.wikipedia.org/wiki/Tikhonov_regularization&quot; target=&quot;_blank&quot;&gt;Ridge Regression&lt;/a&gt; in the afternoon, I noticed a super cute illustration of Singular Value Decomposition(SVD) drawn by Prof. Cynthia Rudin.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://gytcrt.github.io/public/img/SVD.png&quot; alt=&quot;Singular Value Decomposition&quot; style=&quot;width: 1000px;&quot; /&gt;&lt;/p&gt;
@@ -455,9 +455,9 @@ research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
  
  <entry>
    <title>My definition of Bayesian statistics</title>
-   <link href="http://gytcrt.github.io/2016/10/18/My-definition-of-Bayesian-statistics/"/>
-   <updated>2016-10-18T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/10/18/My-definition-of-Bayesian-statistics</id>
+   <link href="http://localhost:4000/2016/10/18/My-definition-of-Bayesian-statistics/"/>
+   <updated>2016-10-18T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2016/10/18/My-definition-of-Bayesian-statistics</id>
    <content type="html">&lt;p&gt;            In my writing class, I tried to explain what Bayesian statistics is to my professor and mentor, but even the &lt;a href=&quot;https://en.wikipedia.org/wiki/Bayesian_statistics&quot; target=&quot;_blank&quot;&gt;Wikipedia page of Bayesian statistics&lt;/a&gt; is full of jargons for people out of my field. It reminds me of the first time I knew about Bayesian statistics from a senior student at Duke, I barely understood nothing he talked about Bayesian during the conversation. Therefore, I attempted to define Bayesian statistics in a more plain way. I’ve revised the definition for several times. It’s not perfect yet, but I’d like to post it here. I’m willing to hear some advice on it:)&lt;/p&gt;
 
 &lt;center&gt; &lt;img src=&quot;/gytcrt.github.io/public/img/bayesian.jpg&quot; style=&quot;width: 400px;&quot; /&gt; &lt;/center&gt;
@@ -479,9 +479,9 @@ research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
  
  <entry>
    <title>A genetic example of Latent Dirichlet Allocation</title>
-   <link href="http://gytcrt.github.io/2016/09/08/A-genetic-example-of-Latent-Dirichlet-Allocation/"/>
-   <updated>2016-09-08T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/09/08/A-genetic-example-of-Latent-Dirichlet-Allocation</id>
+   <link href="http://localhost:4000/2016/09/08/A-genetic-example-of-Latent-Dirichlet-Allocation/"/>
+   <updated>2016-09-08T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2016/09/08/A-genetic-example-of-Latent-Dirichlet-Allocation</id>
    <content type="html">&lt;p&gt;            There are lots of blogs or &lt;a href=&quot;https://www.quora.com/What-is-a-good-explanation-of-Latent-Dirichlet-Allocation&quot; target=&quot;_blank&quot;&gt;examples online&lt;/a&gt; to explain how a document is generated by Latent Dirichelt Allocation. But during a discussion last week, Prof. Banks gave me a very informative example of Latent Dirichelet Allocation, and it illustrates the way we inherit the genes from our ancestors.&lt;/p&gt;
 
 &lt;p&gt;            Suppose Mark is a young data scientist living in the San Francisco Bay Area, his maternal family is from Japan, and his paternal family is from Europe. His favorite food is volcano rolls and Cobb Salad. What kind of genes might Mark have? Let’s try to analyze it in a LDA way:&lt;/p&gt;
@@ -505,9 +505,9 @@ research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
  
  <entry>
    <title>Shiny&amp;#58 easily passing a long list of items to selectInput choices</title>
-   <link href="http://gytcrt.github.io/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/"/>
-   <updated>2016-08-11T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/08/11/RShiny:-easily-passing-a-long-list-of-items-to-selectInput-choices</id>
+   <link href="http://localhost:4000/2016/08/11/RShiny-easily-passing-a-long-list-of-items-to-selectInput-choices/"/>
+   <updated>2016-08-11T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2016/08/11/RShiny:-easily-passing-a-long-list-of-items-to-selectInput-choices</id>
    <content type="html">&lt;p&gt;            Recently, I’m working on R Shiny to design a Web App. I found the example of selectInput shown on &lt;a href=&quot;http://shiny.rstudio.com/reference/shiny/latest/selectInput.html&quot; target=&quot;_blank&quot;&gt;Shiny Reference&lt;/a&gt; is not helpful once we have a list of items like &lt;a href=&quot;/gytcrt.github.io/public/files/countries.txt&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Are we gonna list all the items one by one?&lt;/p&gt;
@@ -540,9 +540,9 @@ research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
  
  <entry>
    <title>Probability as Art</title>
-   <link href="http://gytcrt.github.io/2016/07/17/probability-as-art/"/>
-   <updated>2016-07-17T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/07/17/probability-as-art</id>
+   <link href="http://localhost:4000/2016/07/17/probability-as-art/"/>
+   <updated>2016-07-17T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2016/07/17/probability-as-art</id>
    <content type="html">&lt;p&gt;            I went to &lt;a href=&quot;https://www.sfmoma.org/&quot; target=&quot;_blank&quot;&gt;San Francisco Museum of Modern Art (SFMOMA)&lt;/a&gt; yesterday, and it was my second time to visit there in this summer.&lt;/p&gt;
 
 &lt;p&gt;            When I was at Berkeley in 2014, SFMOMA was under construction. Unfortunately, I couldn’t get into SFMOMA, and at the beginning of 2015, I visited MOMA in New York City. After a three-year-long expansion, SFMOMA reopened on May 14, 2016, and it happened that I am in the Bay Area now.&lt;/p&gt;
@@ -565,9 +565,9 @@ research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
  
  <entry>
    <title>First Post&amp;#58 Website Active</title>
-   <link href="http://gytcrt.github.io/2016/07/10/first-post-website-active/"/>
-   <updated>2016-07-10T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/07/10/first-post:-website-active</id>
+   <link href="http://localhost:4000/2016/07/10/first-post-website-active/"/>
+   <updated>2016-07-10T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2016/07/10/first-post:-website-active</id>
    <content type="html">&lt;p&gt;            Finally, I set up my first personal website. The idea occurred to me at the beginning of 2016, but it took me some time to explore and find a way to accomplish it. Actually, it was quite an adventurous and rewarding mission, because I was not an expert in stuff like HTML and CSS.&lt;/p&gt;
 
 &lt;p&gt;            I visited a lot of personal websites of professors, data scientists, software engineers and designers, and researched some popular web-hosting services, before I started. I decided to use &lt;a href=&quot;http://jekyllrb.com&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Page&lt;/a&gt; to generate and host the website, because they are free and flexible.&lt;/p&gt;
@@ -591,9 +591,9 @@ research&lt;/em&gt; 2.Nov (2001): 45-66.&lt;/p&gt;
  
  <entry>
    <title>Topic Modeling with Latent Dirichlet Allocation</title>
-   <link href="http://gytcrt.github.io/2016/05/02/topic-modeling-with-latent-dirichlet-allocation/"/>
-   <updated>2016-05-02T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/05/02/topic-modeling-with-latent-dirichlet-allocation</id>
+   <link href="http://localhost:4000/2016/05/02/topic-modeling-with-latent-dirichlet-allocation/"/>
+   <updated>2016-05-02T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2016/05/02/topic-modeling-with-latent-dirichlet-allocation</id>
    <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -863,15 +863,15 @@ th {
   }
 }
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  font-family: &apos;Glyphicons Halflings&apos;;
+  src: url(&apos;../components/bootstrap/fonts/glyphicons-halflings-regular.eot&apos;);
+  src: url(&apos;../components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix&apos;) format(&apos;embedded-opentype&apos;), url(&apos;../components/bootstrap/fonts/glyphicons-halflings-regular.woff2&apos;) format(&apos;woff2&apos;), url(&apos;../components/bootstrap/fonts/glyphicons-halflings-regular.woff&apos;) format(&apos;woff&apos;), url(&apos;../components/bootstrap/fonts/glyphicons-halflings-regular.ttf&apos;) format(&apos;truetype&apos;), url(&apos;../components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular&apos;) format(&apos;svg&apos;);
 }
 .glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
+  font-family: &apos;Glyphicons Halflings&apos;;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -2096,7 +2096,7 @@ blockquote .small {
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
-  content: '\2014 \00A0';
+  content: &apos;\2014 \00A0&apos;;
 }
 .blockquote-reverse,
 blockquote.pull-right {
@@ -2112,7 +2112,7 @@ blockquote.pull-right footer:before,
 blockquote.pull-right small:before,
 .blockquote-reverse .small:before,
 blockquote.pull-right .small:before {
-  content: '';
+  content: &apos;&apos;;
 }
 .blockquote-reverse footer:after,
 blockquote.pull-right footer:after,
@@ -2120,7 +2120,7 @@ blockquote.pull-right footer:after,
 blockquote.pull-right small:after,
 .blockquote-reverse .small:after,
 blockquote.pull-right .small:after {
-  content: '\00A0 \2014';
+  content: &apos;\00A0 \2014&apos;;
 }
 address {
   margin-bottom: 18px;
@@ -6917,7 +6917,7 @@ button.close {
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&apos;#80000000&apos;, endColorstr=&apos;#00000000&apos;, GradientType=1);
 }
 .carousel-control.right {
   left: auto;
@@ -6926,7 +6926,7 @@ button.close {
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&apos;#00000000&apos;, endColorstr=&apos;#80000000&apos;, GradientType=1);
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -6964,10 +6964,10 @@ button.close {
   font-family: serif;
 }
 .carousel-control .icon-prev:before {
-  content: '\2039';
+  content: &apos;\2039&apos;;
 }
 .carousel-control .icon-next:before {
-  content: '\203a';
+  content: &apos;\203a&apos;;
 }
 .carousel-indicators {
   position: absolute;
@@ -7351,9 +7351,9 @@ button.close {
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&amp;v=4.2.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-family: &apos;FontAwesome&apos;;
+  src: url(&apos;../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0&apos;);
+  src: url(&apos;../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&amp;v=4.2.0&apos;) format(&apos;embedded-opentype&apos;), url(&apos;../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0&apos;) format(&apos;woff&apos;), url(&apos;../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0&apos;) format(&apos;truetype&apos;), url(&apos;../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular&apos;) format(&apos;svg&apos;);
   font-weight: normal;
   font-style: normal;
 }
@@ -10131,7 +10131,7 @@ div.cell.selected.jupyter-soft-selected {
   text-align: right;
   /* This has to match that of the the CodeMirror class line-height below */
   line-height: 1.21429em;
-  /* Don't highlight prompt number selection */
+  /* Don&apos;t highlight prompt number selection */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -10652,7 +10652,7 @@ div.output_text {
   /* This has to match that of the the CodeMirror class line-height below */
   line-height: 1.21429em;
 }
-/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
+/* stdout/stderr are &apos;text&apos; as well as &apos;stream&apos;, but execute_result/error are *not* streams */
 div.output_stderr {
   background: #fdd;
   /* very light red background for stderr */
@@ -11405,7 +11405,7 @@ ul#help_menu li a i {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: ' ';
+  content: &apos; &apos;;
 }
 .command_mode .modal_indicator:before.pull-left {
   margin-right: .3em;
@@ -11814,7 +11814,7 @@ div#pager .ui-resizable-handle {
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
-  content: '';
+  content: &apos;&apos;;
   top: 2px;
   left: 50%;
   height: 3px;
@@ -11957,7 +11957,7 @@ li.pulse.open &gt; a.dropdown-toggle {
  * try to get back the less file by reverting somme commit in history
  **/
 /*
- * We'll try to get something pretty, so we
+ * We&apos;ll try to get something pretty, so we
  * have some strange css to have the scroll bar on
  * the left with fix button on the top right of the tooltip
  */
@@ -12323,16 +12323,16 @@ div#notebook {
     &lt;script type=&quot;text/x-mathjax-config&quot;&gt;
     MathJax.Hub.Config({
         tex2jax: {
-            inlineMath: [ ['$','$'], [&quot;\\(&quot;,&quot;\\)&quot;] ],
-            displayMath: [ ['$$','$$'], [&quot;\\[&quot;,&quot;\\]&quot;] ],
+            inlineMath: [ [&apos;$&apos;,&apos;$&apos;], [&quot;\\(&quot;,&quot;\\)&quot;] ],
+            displayMath: [ [&apos;$$&apos;,&apos;$$&apos;], [&quot;\\[&quot;,&quot;\\]&quot;] ],
             processEscapes: true,
             processEnvironments: true
         },
         // Center justify equations in code and markdown cells. Elsewhere
         // we use CSS to left justify single line equations in code cells.
-        displayAlign: 'center',
+        displayAlign: &apos;center&apos;,
         &quot;HTML-CSS&quot;: {
-            styles: {'.MathJax_Display': {&quot;margin&quot;: 0}},
+            styles: {&apos;.MathJax_Display&apos;: {&quot;margin&quot;: 0}},
             linebreaks: { automatic: true }
         }
     });
@@ -12800,7 +12800,7 @@ $$&lt;p&gt;And we can implement LDA by Gibbs Sampling.&lt;/p&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
 &lt;p&gt;Latent Dirichlet Allocation was also implemented using variational inference. In situations where variational inference is typically used, the posterior is typically intractable to calculate directly. In the case of LDA, the posterior $p(\theta,z,w | \alpha,\beta)$ is difficult to compute, so the distribution is instead approximated with the variational distribution:&lt;/p&gt;
-$$q(\theta,z | \gamma,\phi) = q(\theta|\gamma) \prod_{n=1}^{N} q(z_n|\phi_n)$$&lt;p&gt;Using Jensen's inequality, it can be shown that the difference between the log likelihood of the true posterior and the variational approximation is the KL-divergence between the two. In order words:&lt;/p&gt;
+$$q(\theta,z | \gamma,\phi) = q(\theta|\gamma) \prod_{n=1}^{N} q(z_n|\phi_n)$$&lt;p&gt;Using Jensen&apos;s inequality, it can be shown that the difference between the log likelihood of the true posterior and the variational approximation is the KL-divergence between the two. In order words:&lt;/p&gt;
 $$ \log(p(w|\alpha,\beta) = L(\gamma,\phi;\alpha,\beta) + D(q(\theta,z|\gamma,\phi)||p(\theta,z|w,\alpha,\beta))$$&lt;p&gt;We can choose to either minimize the KL-divergence or maximize the likelihood. Here, the latter is approach is taken. Factoring the likelihood appropriately, we can write the following:&lt;/p&gt;
 $$ L(\gamma,\phi;\alpha,\beta) = E_q[\log p(\theta|\alpha)] + E_q[\log p(z|\theta)] + E_q [\log p(w|z,\beta)] - E_q [\log q(\theta)] - E_q[\log q(z)] $$&lt;p&gt;This likelihood is maximized through Expectation-Maximization (EM). During the expectation step, the variational parameters $\phi$ and $\gamma$ are first optimized by maximizing the likelihood with respect to each individually. During the maximization step, the likelihood is then maximized with respect to model parameters $\alpha$ and $\beta$. This process is outlined below.&lt;/p&gt;
 
@@ -12872,7 +12872,7 @@ $$ \gamma_i = \alpha_i + \sum_{n=1}^N(\phi_{ni})$$
 $$ \beta_{ij} \propto \sum_{m=1}^M \sum_{n=1}^{N_m} \phi_{dni}w_{mn}^j$$&lt;p&gt;where $w_{mn}^j$ = 1 if the $n^{th}$ word of document $m$ is equal to $j$, and 0 otherwise. Since the columns of \beta represent the probability of each word given the topic of that particular column, they must be normalized to sum to 1.&lt;/p&gt;
 &lt;p&gt;Taking the derivative of the log likelihood with respect to $\alpha$ yields:&lt;/p&gt;
 $$ \frac{\partial L}{\partial\alpha_i} = M(\Psi(\sum_{j=1}^k\alpha_j)-\Psi(\alpha_i)) - \sum_{m=1}^M(\Psi(\gamma_{di})-\Psi(\sum_{j=1}^k\gamma_{dj}))$$&lt;p&gt;Because this is difficult to find the zero intercept of this derivative, $\alpha$ is instead maximized numerically with the Newton-Raphson method. The Hessian is of the form:&lt;/p&gt;
-$$ \frac{\partial^2 L}{\partial\alpha_i\partial\alpha_j} = M(\Psi'(\sum_{j=1}^k \alpha_j) - \delta(i,j)\Psi'(\alpha_i))$$&lt;p&gt;&lt;/p&gt;
+$$ \frac{\partial^2 L}{\partial\alpha_i\partial\alpha_j} = M(\Psi&apos;(\sum_{j=1}^k \alpha_j) - \delta(i,j)\Psi&apos;(\alpha_i))$$&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Note: This is slightly different from what is stated in the paper, which has a couple errors in the reported form of the Hessian.&lt;/p&gt;
 
 &lt;/div&gt;
@@ -13533,7 +13533,7 @@ gibbs_sampling_cy: 1.2
 &lt;/div&gt;
 &lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;We implemented in Python via Gibbs Sampling and Variational Inference. Using the Dirchlet distribution as a prior, the goal was to discover latent topics among documents in a corpus. We simulated a dataset according to the generative process in Blei et al's paper. We then used LDA to estimate the latent variables and compared them with real latent variables in the generating process. As the visualization of latent variables showed, the estimated values were quite close to the real values. Also, we tried to improve the performance of our Gibbs sampling method with Cython, and it sped up the algorithm by 20%. In the future, we can further optimize our algorithm, as we did not tailor the data structure for Cython implementation. Once we do that, the perfomance of the algorithm will likely be boosted to a large degree.&lt;/p&gt;
+&lt;p&gt;We implemented in Python via Gibbs Sampling and Variational Inference. Using the Dirchlet distribution as a prior, the goal was to discover latent topics among documents in a corpus. We simulated a dataset according to the generative process in Blei et al&apos;s paper. We then used LDA to estimate the latent variables and compared them with real latent variables in the generating process. As the visualization of latent variables showed, the estimated values were quite close to the real values. Also, we tried to improve the performance of our Gibbs sampling method with Cython, and it sped up the algorithm by 20%. In the future, we can further optimize our algorithm, as we did not tailor the data structure for Cython implementation. Once we do that, the perfomance of the algorithm will likely be boosted to a large degree.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -13567,9 +13567,9 @@ gibbs_sampling_cy: 1.2
  
  <entry>
    <title>Introducing Hydejack</title>
-   <link href="http://gytcrt.github.io/2016/03/08/introducing-hydejack/"/>
-   <updated>2016-03-08T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2016/03/08/introducing-hydejack</id>
+   <link href="http://localhost:4000/2016/03/08/introducing-hydejack/"/>
+   <updated>2016-03-08T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2016/03/08/introducing-hydejack</id>
    <content type="html">&lt;style&gt;
   .preview {
     display: none;
@@ -13633,7 +13633,7 @@ Since the sidebar moves to the top, the user has to scroll just to read the titl
 &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Introducing Hydejack&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://qwtel.com/hydejack/public/img/hyde.jpg&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#949667'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#949667&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;how-to-add-a-new-tag&quot;&gt;How to Add a New Tag&lt;/h3&gt;
@@ -13682,9 +13682,9 @@ They will appear in the listed order.&lt;/p&gt;
  
  <entry>
    <title>Introducing Hyde</title>
-   <link href="http://gytcrt.github.io/2013/12/28/introducing-hyde/"/>
-   <updated>2013-12-28T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2013/12/28/introducing-hyde</id>
+   <link href="http://localhost:4000/2013/12/28/introducing-hyde/"/>
+   <updated>2013-12-28T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2013/12/28/introducing-hyde</id>
    <content type="html">&lt;p&gt;Hyde is a brazen two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that pairs a prominent sidebar with uncomplicated content. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
 
 &lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
@@ -13726,9 +13726,9 @@ They will appear in the listed order.&lt;/p&gt;
  
  <entry>
    <title>Example content</title>
-   <link href="http://gytcrt.github.io/2012/02/07/example-content/"/>
-   <updated>2012-02-07T00:00:00+08:00</updated>
-   <id>http://gytcrt.github.io/2012/02/07/example-content</id>
+   <link href="http://localhost:4000/2012/02/07/example-content/"/>
+   <updated>2012-02-07T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2012/02/07/example-content</id>
    <content type="html">&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -13747,7 +13747,7 @@ They will appear in the listed order.&lt;/p&gt;
   &lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; should be defined like this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*[HTML]: HyperText Markup Language&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;Citations, like &lt;cite&gt;— Mark otto&lt;/cite&gt;, should use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~~deleted~~&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+  &lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
@@ -13764,10 +13764,10 @@ They will appear in the listed order.&lt;/p&gt;
 
 &lt;span class=&quot;c1&quot;&gt;// Create a function that takes two arguments and returns the sum of those&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// arguments&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;return a + b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;return a + b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;// Call the function&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// &amp;gt; 8&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -13876,7 +13876,7 @@ They will appear in the listed order.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
       &lt;p&gt;You can insert footnote marks using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[^1]&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[^2]&lt;/code&gt;, etc and write the footnote text at the bottom of your file like this: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[^1]: You can also insert footnote marks...&lt;/code&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;

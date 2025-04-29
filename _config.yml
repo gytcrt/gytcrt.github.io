@@ -2,10 +2,10 @@
 permalink:        pretty
 
 # Setup
-url:              http://gytcrt.github.io
+url:              https://gytcrt.github.io
 
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
-baseurl:          /gytcrt.github.io
+baseurl:          ''
 
 title:            Andrea Gao
 
@@ -21,7 +21,7 @@ description:      >
 sidebar_tags:     [Blog , Project, Resume]
 
 # Fallback image and color if not overwritten for tag or post
-image:            /gytcrt.github.io/public/img/John.jpg
+image:            /public/img/John.jpg
 color:            '#A85641'
 
 author:
@@ -37,7 +37,7 @@ author:
   disqus:         yuanandreagao
 
   # This photo will be used in the about section
-  photo:          /gytcrt.github.io/public/img/profile.jpg
+  photo:          /public/img/profile.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:
