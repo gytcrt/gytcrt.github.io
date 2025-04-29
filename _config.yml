@@ -40,11 +40,11 @@ author:
   photo:          /public/img/profile.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:
+  about: |
     Hello World.
 
 
-    This is 高瑗(Andrea Gao).
+    **This is Andrea Gao. This website has been archived. Please visit [andreagao.com](https://andreagao.com) for my update.**
 
 kramdown:
   math_engine: mathjax
