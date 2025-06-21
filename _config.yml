@@ -1,43 +1,42 @@
 # Permalinks
-permalink:        pretty
+permalink: pretty
 
 # Setup
-url:              https://gytcrt.github.io
+url: https://gytcrt.github.io
 
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
-baseurl:          ''
+baseurl: ""
 
-title:            Andrea Gao
+title: Andrea Gao
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
-description:      >
+description: >
   One should either be a work of art, or wear a work of art.
 
 
   ——Oscar Wilde
 
-
 # The tags listed as entries in the sidebar
-sidebar_tags:     [Blog , Project, Resume]
+sidebar_tags: [Blog, Project, Resume]
 
 # Fallback image and color if not overwritten for tag or post
-image:            /public/img/John.jpg
-color:            '#A85641'
+image: /public/img/John.jpg
+color: "#A85641"
 
 author:
-  name:           'Andrea Gao'
+  name: "Andrea Gao"
 
   # Setting social media usernames will add icons at the bottom of the sidebar
-  github:         gytcrt
-  linkedin:       ayuangao
-  instagram:      gytcrt
-  twitter:        gytcrt
+  github: gytcrt
+  linkedin: ayuangao
+  instagram: gytcrt
+  twitter: gytcrt
 
   # Setting a disqus username will enable the comment section
-  disqus:         yuanandreagao
+  disqus: yuanandreagao
 
   # This photo will be used in the about section
-  photo:          /public/img/profile.jpg
+  photo: /public/img/profile.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: |
@@ -45,6 +44,12 @@ author:
 
 
     **This is Andrea Gao. This website has been archived. Please visit [andreagao.com](https://andreagao.com) for my update.**
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 kramdown:
   math_engine: mathjax
